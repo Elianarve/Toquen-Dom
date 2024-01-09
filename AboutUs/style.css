@@ -7,3 +7,42 @@
 body {
     background-color: aquamarine;
 }
+
+.profiles {
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.profilePhoto {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.information {
+    background-color: rgba(255, 255, 255, 30%);
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.socialLogo {
+    width: 50px;
+}
