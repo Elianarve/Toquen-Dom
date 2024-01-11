@@ -103,12 +103,6 @@ body {
         display: flex;
     }
     
-    .profile{
-        display: flex;
-        flex-direction: column;
-        /* width: 200px; */
-    }
-    
     .profilePhoto {
         width: 10vw;
         height: 10vw;
