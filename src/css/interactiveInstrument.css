@@ -48,58 +48,6 @@
 }
 /* fin barra nav */
 
-/* inicio secciones */
-.container{
-    display: flex;
-    width: 100%;
-}
-
-.section-center{
-    background-color: #FBF9F1;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.title{
-    font-weight: 800;
-    font-size: 100px;
-    color: #12486B;
-    margin: 7% 0 0 15%;
-    line-height: 108%;
-}
-
-.title-coders{
-    font-weight: 800;
-    font-size: 100px;
-    color: #12486B;
-    margin-left: 100px;
-}
-
-.subtitle{
-    font-size: 42px;
-    color: #E55807;
-    font-weight: 400;
-    margin: 7% 0 0 15%;
-}
-
-.paragraph{
-    margin-left: 15%;
-    font-size: 24px;
-    color: #12486B;
-    text-align: justify;
-    width: 65%;
-}
-
-.section-img{
-    background-color: #FBF9F1;
-    margin-right: 4%;
-}
-
-.img-body{
-    margin-top: 7%;
-}
-/* fin secciones */
 
 /* inicio footer */
 
