@@ -7,6 +7,17 @@
 
 /*INSTRUMENT IMG*/
 img {
-    width: 50%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
+}
+
+/*DRUMSET SECTION*/
+.drumset {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.drumset img {
+    border-radius: 0 20% 20% 0%;
 }
