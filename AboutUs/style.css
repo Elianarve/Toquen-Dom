@@ -34,7 +34,7 @@
     .profilePhoto {
         width: 30vw;
         height: 30vw;
-        border-radius: 100px;
+        border-radius: 100vw;
         background-image: url(images/profile_photo_example.png);
         background-size: contain;
         background-repeat: no-repeat;
