@@ -6,84 +6,77 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(#419197, #78D6C6);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* mobile */
+
+@media screen and (max-width: 899px) {
+    body {
+        background-image: linear-gradient(#419197, #78D6C6);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    .p1, .p2, .p3, .p4, .p5 {
+        margin: 5vw;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 30%);
+        border-radius: 10px;
+        
+        border: 1px solid #fff;
+    }
+    
+    .profilePhoto {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 100px;
+        background-image: url(images/profile_photo_example.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .information {
+        padding: 2vw 1vw;
+        margin: 0.25vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 6vw;
+    }
+    
+    .nombre, .proffesion, .description {
+        margin: 5px 0px;
+        width: 70vw;
+    }
+    
+    .proffesion {
+        color: #E55807;
+    }
+    
+    .social {
+        padding: 1vw;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .socialLogo {
+        width: 15vw;
+    }
 }
 
-.profiles {
-    display: flex;
-}
+/* Web */
 
-.profile{
-    display: flex;
-    flex-direction: column;
-    /* width: 200px; */
-}
-
-.profilePhoto {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 100px;
-    background-image: url(images/profile_photo_example.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.information {
-    padding: 2vw 1vw;
-    background-color: rgba(255, 255, 255, 30%);
-    margin: 0.25vw;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1vw;
-}
-
-.nombre, .proffesion, .description {
-    margin: 5px 0px;
-    width: 12vw;
-}
-
-.proffesion {
-    color: #E55807;
-}
-
-.social {
-    padding: 1vw;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-}
-
-.socialLogo {
-    width: 3.5vw;
-}
-
-@media screen and (max-width: 425px) {
-    /* .profile{
-       background-color: #E55807;
-    } */
-  }
-
-  @media screen and (min-width: 425px) {
+@media screen and (min-width: 900px) {
     body {
         background-image: linear-gradient(#419197, #78D6C6);
         background-repeat: no-repeat;
@@ -106,28 +99,28 @@ body {
     .profilePhoto {
         width: 10vw;
         height: 10vw;
-        border-radius: 100px;
+        border-radius: 100vw;
         background-image: url(images/profile_photo_example.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        margin: 1vw 0vw;
     }
     
     .information {
-        padding: 2vw 1vw;
         background-color: rgba(255, 255, 255, 30%);
-        margin: 0.25vw;
-        border-radius: 10px;
-        border: 1px solid #fff;
+        border-radius: 1vw;
+        border: 0.1vw solid #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         font-size: 1vw;
+        margin: 0.25vw;
     }
     
     .nombre, .proffesion, .description {
-        margin: 5px 0px;
+        margin: 0vw 0vw 0.4vw 0px;
         width: 12vw;
     }
     
@@ -140,12 +133,17 @@ body {
         display: flex;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.3);
-        margin: 5px;
-        border-radius: 10px;
-        border: 1px solid #fff;
+        border-radius: 1vw;
+        border: 0.1px solid #fff;
+        margin: 0.50vw 0.25vw 0.25vw 0.25vw;
     }
     
     .socialLogo {
         width: 3.5vw;
+    }
+
+    .p2, .p4{
+        display: flex;
+        flex-direction: column-reverse;
     }
   }
