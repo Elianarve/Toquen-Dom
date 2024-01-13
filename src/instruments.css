@@ -5,10 +5,14 @@
     font-family: poppins;
 }
 
+*{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
 /* Inicio nav */
 
 .nav {
-    height: 130px;
     background-color: #419197;
     display: flex;
 }
@@ -16,16 +20,17 @@
 .img-logo{
     width: auto;
     height: auto;
-    margin: 20px;
+    margin: 0.5em;
     object-fit: cover;
     background-color: #419197;
 }
 
 .menu{
-    width: 45%;
+    width: 55%;
     display: flex;
-    background-color: #419197;
     align-items: center;
+    justify-content: start;
+    background-color: #419197;
 }
 
 .menu li a{
@@ -49,7 +54,7 @@
 /* fin barra nav */
 /*------------------------------------------*/
 
-/* INICIO INSTRUMENTS SECTION */
+/* START INSTRUMENTS SECTION */
 /*ALL INSTRUMENTS COMPONENTS*/
 
 /* img boxes */
@@ -112,6 +117,7 @@ h2, h4 {
     margin-left: 10%;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 
