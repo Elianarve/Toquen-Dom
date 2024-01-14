@@ -3,29 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images\sound coder logo solo.png">
     <title>Contact Form</title>
 </head>
 <body>
-    <section class="form-container">
-        <form>
-            <h2>CONTACTO</h2>
-            <section class="input-group">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Introduce tu nombre">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Introduce tu email">
-                <label for="phone">Teléfono</label>
-                <input type="phone" name="phone" id="phone" placeholder="Introduce tu teléfono">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Introduce tu mensaje"></textarea>
-                <input class="btn" type="submit" value="ENVIAR">
-            </section>
+    <section class="form__container">
+        
+        <h2>CONTACTO</h2>
+        
+        <form action="" class="formulario" id="formulario">
+            
+            <!--Grupo Nombre -->
+            <section class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<section class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Tu nombre">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El nombre puede contener letras, espacios y acentos.</p>
+			</section>
+
+            <!-- Grupo: Correo Electrónico -->
+            <section class="formulario__grupo" id="grupo__email">
+				<label for="email" class="formulario__label">Email</label>
+				<section class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="email" id="email" placeholder="email@email.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El email sólo puede contener letras, números, puntos, guiones y guión bajo.</p>
+			</section>
+
+            <!-- Grupo: Teléfono -->
+			<section class="formulario__grupo" id="grupo__phone">
+				<label for="phone" class="formulario__label">Teléfono</label>
+				<section class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="phone" id="phone" placeholder="+34 609123456">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El teléfono sólo puede contener números y el máximo son 14 dígitos.</p>
+			</section>
+
+            <!-- Grupo: Mensaje -->
+            <section class="formulario__grupo" id="grupo__message">
+				<label for="message" class="formulario__label">Mensaje</label>
+				<section class="formulario__grupo-input">
+					<textarea class="formulario__input" name="message" id="message" placeholder="Introduce tu mensaje"></textarea>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El mensaje puede contener un máximo de 1000 caracteres.</p>
+			</section>
+
+            <!-- Grupo: Términos y Condiciones -->
+			<section class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__terminos">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Términos y Condiciones
+				</label>
+			</section>
+
+            <!-- Mensaje de error -->
+            <section class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</section>
+
+            <!-- Botón de enviar -->
+			<section class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">ENVIAR</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente!</p>
+			</section>
+
         </form>
     </section>
+    
+    <script src="./main.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
