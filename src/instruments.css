@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
 
-* {
-    margin: 0;
-    font-family: poppins;
-}
-
 *{
     margin: 0;
     font-family: 'Poppins';
@@ -18,15 +13,16 @@
 }
 
 .img-logo{
-    width: auto;
-    height: auto;
+    width: 15em;
+    height: 3.2em;
     margin: 0.5em;
+    margin-right: 17em;
     object-fit: cover;
     background-color: #419197;
 }
 
 .menu{
-    width: 55%;
+    width: 12%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -48,7 +44,7 @@
 
 .list{
     list-style: none;
-    margin-left: 15%;
+    margin-left: 45%;
     background-color: #419197;
 }
 /* fin barra nav */
@@ -59,8 +55,8 @@
 
 /* img boxes */
 img {
-    width: 604px;
-    height: 371px;
+    width: 20em;
+    height: 15em;
 }
 
 /* titles and subtitles */
@@ -68,17 +64,23 @@ h2, h4 {
     color: #12486B;
 }
 
+h2:hover, h4:hover {
+    color: #E55807;
+}
+
 /* tutorials */
 .tutorial {
     color:#E55807;
     margin-left: 5%;
-    font-size: 1vw;
+    font-size: 0.8em;
+    font-weight: normal;
 }
 
 /* tutorials link*/
 
 .link-tutorial {
     color: #E55807;
+    font-weight: normal;
 }
 
 /* All description list of instruments */
@@ -175,4 +177,55 @@ h2, h4 {
 /* END GUITAR AND KALIMBA SECTION */
 
 /*----------------------------*/
-/* START FOOTER */
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+    /*ALL COMPONENTS OF INSTRUMENTS query*/
+    h2 {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 0.5em;
+    }
+
+    img {
+        width: 10em;
+        height: 8em;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .tutorial {
+        font-size: 0.5em;
+    }
+    /* END ALL COMPONENTS INSTRUMENTS */
+
+/*---------------------------------------------*/
+    /* ALL CONTAINERS INSTRUMENT query */
+
+    .drumset, .guitar, .piano, .kalimba {
+        align-items: center;
+    }
+
+    .description-drumset, .description-guitar, .description-piano, .description-kalimba {
+        flex-direction: column;
+    }
+
+    .list-guitar, .list-kalimba {
+        border-right: #E55807 0.3em solid;
+        padding-right: 4.5%;
+        border-left: none;
+        height: 30%;
+        text-align: end;
+    }
+    
+    .list-drumset, .list-guitar, .list-piano, .list-kalimba {
+        font-size: 40%;
+        font-weight: normal;
+        width: 35%;
+    }
+    /* END ALL CONTAINERS INSTRUMENT query*/
+}
