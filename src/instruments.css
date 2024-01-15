@@ -22,10 +22,9 @@
 }
 
 .menu{
-    width: 12%;
+    width: 15%;
     display: flex;
     align-items: center;
-    justify-content: start;
     background-color: #419197;
 }
 
@@ -39,7 +38,7 @@
 .menu li a:hover{
     background-color: #E55807;
     border-radius: 50px;
-    padding: 10px 25px;
+    padding: 15px 25px;
 }
 
 .list{
