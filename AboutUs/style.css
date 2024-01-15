@@ -6,11 +6,12 @@
     box-sizing: border-box;
 }
 
+
 /* mobile */
 
 @media screen and (max-width: 899px) {
     body {
-        background-image: linear-gradient(#419197, #78D6C6);
+        background-image: linear-gradient(#419197, #78D6C6, #FBF9F1);
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Outfit', sans-serif;
@@ -72,13 +73,15 @@
     .socialLogo {
         width: 15vw;
     }
+
+    
 }
 
 /* Web */
 
 @media screen and (min-width: 900px) {
     body {
-        background-image: linear-gradient(#419197, #78D6C6);
+        background-image: linear-gradient(180deg, #419197 16.5%, rgba(93, 180, 175, 0.49) 61.5%, #FBF9F1 100%);
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Outfit', sans-serif;
@@ -88,12 +91,15 @@
         width: 100vw;
         height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     .profiles {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vw 0vw;
     }
     
     .profilePhoto {
@@ -146,4 +152,73 @@
         display: flex;
         flex-direction: column-reverse;
     }
+
+    /* Inicio nav */
+
+.nav {
+    background-color: #419197;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.img-logo{
+    width: 23vw;
+    background-color: #419197;
+    margin: 0vw 1vw;
+}
+
+.menu{
+    display: flex;
+    background-color: #419197;
+    margin: 1vw;
+}
+
+.menu li a{
+    text-decoration: none;
+    background-color: #419197;
+    color: #FBF9F1;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: small;
+}
+
+.menu li a:hover{
+    background-color: #E55807;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: medium;
+}
+
+.list{
+    list-style: none;
+    background-color: #419197;
+}
+/* fin barra nav */
+
+/* inicio footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    width: 95%;
+    background-color: #12486B;
+    height: 2px;
+}
+
+.section-footer{
+    width: 100vw;
+    color: #12486B;
+    font-size: 20px;
+    font-weight: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 0;
+}
+/* fin footer */
   }
