@@ -8,7 +8,6 @@ body {
 	flex-direction: column;
     align-items: center;
     justify-content: center;
-	
 }
 
 /* Inicio nav */
@@ -50,6 +49,8 @@ body {
     background-color: #419197;
 }
 /* fin barra nav */
+
+/* EStilos formulario */
 
 .form__container {
     display: flex;
@@ -112,7 +113,7 @@ input, textarea {
 	width: 80%;
 	border-radius: 2rem;
 	height: 2rem;
-	line-height: 45px;
+	line-height: 2rem;
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
 }
@@ -150,8 +151,8 @@ input, textarea {
 
 .formulario__validacion-estado {
 	position: absolute;
-	right: 10px;
-	bottom: 15px;
+	right: 40px;
+	bottom: 8px;
 	z-index: 100;
 	font-size: 16px;
 	opacity: 0;
