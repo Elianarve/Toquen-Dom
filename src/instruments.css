@@ -7,46 +7,6 @@
 
 /* Inicio nav */
 
-.nav {
-    background-color: #419197;
-    display: flex;
-}
-
-.img-logo{
-    width: 15em;
-    height: 3.2em;
-    margin: 0.5em;
-    margin-right: 17em;
-    object-fit: cover;
-    background-color: #419197;
-}
-
-.menu{
-    width: 15%;
-    display: flex;
-    align-items: center;
-    background-color: #419197;
-}
-
-.menu li a{
-    text-decoration: none;
-    background-color: #419197;
-    color: #FBF9F1;
-    font-weight: bold;
-}
-
-.menu li a:hover{
-    background-color: #E55807;
-    border-radius: 50px;
-    padding: 15px 25px;
-}
-
-.list{
-    list-style: none;
-    margin-left: 45%;
-    background-color: #419197;
-}
-/* fin barra nav */
 /*------------------------------------------*/
 
 /* START INSTRUMENTS SECTION */
@@ -177,7 +137,7 @@ h2:hover, h4:hover {
 
 /*----------------------------*/
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
 
     /*ALL COMPONENTS OF INSTRUMENTS query*/
     h2 {
@@ -185,20 +145,20 @@ h2:hover, h4:hover {
     }
 
     h4 {
-        font-size: 0.5em;
+        font-size: 0.48em;
     }
 
     img {
-        width: 10em;
-        height: 8em;
+        width: 7em;
+        height: 6em;
     }
 
     p {
-        font-size: 15px;
+        font-size: 8px;
     }
 
     .tutorial {
-        font-size: 0.5em;
+        font-size: 0.45em;
     }
     /* END ALL COMPONENTS INSTRUMENTS */
 
@@ -222,7 +182,7 @@ h2:hover, h4:hover {
     }
     
     .list-drumset, .list-guitar, .list-piano, .list-kalimba {
-        font-size: 40%;
+        font-size: 0.35em;
         font-weight: normal;
         width: 35%;
     }
