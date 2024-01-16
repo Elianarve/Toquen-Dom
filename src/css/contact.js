@@ -1,10 +1,11 @@
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
+const formulario = document.getElementById('formulario'); //Accedemos al id="formulario"
+const inputs = document.querySelectorAll('#formulario input'); //Almacenamos en un array todos nuestros inputs del formulario mediante el id="formulario__input para después con un eventListener, cada vez que escribimos en el input hagamos una comprobación y validemos el fomulario"
 
+//--- Declaración de expresiones regulares ---
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras, espacios y acentos.
-	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, 
-    phone: /^\d{7,12}$/ // Solo numeros, de 7 a 12 numeros.
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, //Letras, espacios y acentos.
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, // campo + @campo + .campo
+    phone: /^\d{7,12}$/ //Solo numeros, de 7 a 12 numeros.
 }
 
 const campos = {
@@ -14,6 +15,7 @@ const campos = {
     message: false,
 }
 
+// --- Función de tipo flecha para cuando se deje de presionar cada tecla o se haga click fuera del input
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "nombre":
@@ -46,14 +48,16 @@ const validarCampo = (expresion, input, campo) => {
 	}
 }
 
-
-inputs.forEach((input) => {
-	input.addEventListener('keyup', validarFormulario);
-	input.addEventListener('blur', validarFormulario);
+// --- Comprobación cuando usuario escriba o dé un click fuera del input
+inputs.forEach((input) => {  //Para que por cada input ejecute un codigo
+	input.addEventListener('keyup', validarFormulario); //Al dejar de presionar una tecla queremos que compruebe el campo del input
+	input.addEventListener('blur', validarFormulario); //Cuando demos un click fuera del campo que lo compruebe
 });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+// --- Comprobación cuando se pulse el btn Enviar ---
+formulario.addEventListener('submit', (e) => {  //Para ejecutar la función de enviar formulario
+	e.preventDefault();  //Si quisiera enviar los datos a otra pagina esto no se pondría.
+});
 
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.email && campos.phone && campos.message && terminos.checked ){
@@ -70,4 +74,3 @@ formulario.addEventListener('submit', (e) => {
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
-});

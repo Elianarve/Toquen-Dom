@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+	box-sizing: border-box; 
 }
 
 body {
@@ -50,7 +50,8 @@ body {
 }
 /* fin barra nav */
 
-/* EStilos formulario */
+
+/* Estilos formulario */
 
 .form__container {
     display: flex;
@@ -92,35 +93,35 @@ input, textarea {
     font-family: 'Poppins', sans-serif;
     color: #FBF9F1;
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 	margin-left: 2rem;
-	display: block;
+	display: block; /* Para abarcar el 100% */
 	cursor: pointer;
     text-align: left;
 }
 
 .formulario__grupo-input {
-	position: relative;
+	position: relative; /* para que luego podamos posicionar el icono dentro del input */
 }
 
 .formulario__input {
     display: block;  
     margin: auto;   
 	background: #FBF9F1;
-	border: 3px solid transparent;
+	border: 3px solid transparent; /*Transparente para que sólo se vea cuando tiene el estado focus (hagamos click) */
 	width: 80%;
 	border-radius: 2rem;
 	height: 2rem;
-	line-height: 2rem;
+	line-height: 2rem; /*Igual que height para que el texto quede centrado */
 	padding: 0 40px 0 10px;
-	transition: .3s ease all;
+	transition: .3s ease all; /*Transición para todas las propiedades*/
 }
 
-.formulario__input:focus {
+.formulario__input:focus {  /*Cuando le damos click, la transición hará que aparezca el borde*/
 	border: 3px solid #78D6C6;
-	outline: none;
+	outline: none; /*Para quitar un subrayado que pone el navegador y no lo quiero*/
 	box-shadow: 3px 0px 30px rgba(1, 1, 1, 0.4);
 }
 
@@ -142,30 +143,30 @@ input, textarea {
 	color: #ff0000;
 	font-size: 0.7rem;
 	margin-bottom: 0;
-	display: none;
+	display: none; /*Para que los mensajes estén ocultos y sólo se muestren cuando haya un error en el input */
 }
 
-.formulario__input-error-activo {
+.formulario__input-error-activo { /*Modificador que cuando está activo  muestra el mensaje de error en el input */
 	display: block;
 }
 
-.formulario__validacion-estado {
-	position: absolute;
+.formulario__validacion-estado { 
+	position: absolute; /*Para posicionar el icono de error*/
 	right: 40px;
 	bottom: 8px;
-	z-index: 100;
+	z-index: 100; /*Aseguro que siempre va a estar por encima de otros elementos*/
 	font-size: 16px;
-	opacity: 0;
+	opacity: 0; /*Para que no se vea hasta que haya un error */
 }
 
-.formulario__checkbox {
+.formulario__checkbox { /*Para separar el checkbox del texto Acepto terminos y condiciones*/
 	margin-right: 10px;
 }
 
 .formulario__grupo-terminos, 
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-	grid-column: span 2;
+	display: flex;
 }
 
 .formulario__mensaje {
@@ -173,14 +174,14 @@ input, textarea {
 	padding: 0 1rem;
 	margin-bottom: 1rem;
 	border-radius: 3px;
-	display: none;
+	display: none; /*Para que esté oculto y solo se muestre cuando esté activo*/
 }
 
-.formulario__mensaje-activo {
+.formulario__mensaje-activo { /*Modificador del mensaje de error*/
 	display: block;
 }
 
-.formulario__mensaje p {
+.formulario__mensaje p { /*Centra el mensaje de error dentro de su campo*/
 	margin: 0;
 }
 
@@ -191,51 +192,51 @@ input, textarea {
 }
 
 .formulario__btn {
-	height: 45px;
-	line-height: 45px;
+	height: 2rem;
+	line-height: 2rem;
 	width: 50%;
 	background: #E55807;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #FBF9F1;
 	font-weight: bold;
 	border: none;
 	border-radius: 2rem;
 	margin-bottom: 2rem;
 	cursor: pointer;
-	transition: .1s ease all;
+	transition: .1s ease all; /*Transición de 1seg para todas las propiedades*/
 }
 
-.formulario__btn:hover {
+.formulario__btn:hover { /*Sombreado al pasar por encima del btn con el cursor*/
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
 
-.formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
+.formulario__mensaje-exito { /*Mensaje Enviado correctamente!*/
+	font-size: 1rem;
+	color: #E55807;
+	display: none; /*Oculto para que solo se muestre cuando estén todos los inputs correctos*/
 }
 
-.formulario__mensaje-exito-activo {
+.formulario__mensaje-exito-activo { /*Modificador que mostrará el mensaje de enviado correctamente*/
 	display: block;
 }
 
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
+/* ----- -----  Estilos para Validación ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado { /*Clase adicional para que muestre el color verde cuando esté correcto*/
 	color: #1ed12d;
 	opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label {
+.formulario__grupo-incorrecto .formulario__label { /*Modificador de color rojo cuando sea incorrecto*/
 	color: #ff0000;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formulario__grupo-incorrecto .formulario__validacion-estado { /*Para que el icono de error también se muestre en rojo */
 	color: #ff0000;
 	opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input {
+.formulario__grupo-incorrecto .formulario__input { /*Para que el borde del input se muestre en rojo al tener un error*/
 	border: 3px solid #ff0000;
 }
 
@@ -243,7 +244,8 @@ input, textarea {
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
 	.formulario {
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.formulario__grupo-terminos, 
