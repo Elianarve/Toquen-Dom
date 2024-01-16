@@ -75,6 +75,8 @@ body {
   display: flex;
   align-items: center;
   padding: 20%;
+  cursor: url("/public/assets/img/drumstick.png"), auto;
+  
 }
 
 /*SUPERPOSICIONES DE LOS INSTRUMENTOS*/
@@ -227,3 +229,113 @@ body {
 } 
 
 /* fin footer */
+
+
+
+/* Estilos generales para dispositivos móviles y tabletas */
+@media only screen and (max-width: 767px) {
+  body {
+      font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos más pequeños */
+  }
+
+  .nav {
+      flex-direction: column; /* Cambia la dirección del menú a columna */
+      align-items: center; /* Centra los elementos en el eje transversal */
+      text-align: center; /* Centra el texto en el menú */
+  }
+
+  .img-logo {
+      height: auto; /* Ajusta la altura de la imagen del logo para que sea responsive */
+  }
+
+  .menu {
+      width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .menu li {
+      margin-bottom: 10px; /* Agrega espacio entre los elementos del menú */
+  }
+
+  /* Ajusta los estilos para la sección de descripción */
+  .description {
+      margin: 10px;
+  }
+
+  /* Ajusta los estilos para el contenedor de instrumentos */
+  #instruments {
+      padding: 10%;
+  }
+
+  /* Ajusta las posiciones de los instrumentos para dispositivos más pequeños */
+  .crash-left,
+  .hihat-opened,
+  .hihat-close,
+  .small-tom4,
+  .medium-tom3,
+  .kick-bombo,
+  .snare,
+  .floor-tom2,
+  .floor-tom1,
+  .crash-right,
+  .ride {
+      width: 100%;
+      height: auto;
+      top: auto;
+      left: auto;
+      transform: none;
+  }
+
+  /* Ajusta el tamaño de la línea del pie de página */
+  .line {
+      width: 100%;
+  }
+
+  /* Ajusta los estilos del pie de página para dispositivos más pequeños */
+  .section-footer {
+      flex-direction: column;
+  }
+
+  .networks {
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+}
+
+/* Ajusta el estilo para tabletas en orientación horizontal */
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body{
+    overflow: hidden;
+  }
+  
+  
+  
+  #instruments {
+      padding: 5%; /* Ajusta el relleno del contenedor de instrumentos */
+      margin-top: -25%;
+      margin-left: -35%;
+      position: relative;
+      display: flex;
+      align-items: center;
+       
+  }
+  
+  .nav{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
+  .description{
+    display: none;
+  }
+  .crash-left, .hihat-opened, .hihat-close, .small-tom4, .medium-tom3, .kick-bombo,
+.snare, .floor-tom2, .floor-tom1, .crash-right, .ride {
+  
+   position: absolute;
+}
+
+}
+
+
+
+ */
