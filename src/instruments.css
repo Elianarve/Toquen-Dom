@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
 
-*{
+* {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,14 +19,14 @@ body {
     font-size: 1.3vw;
 }
 
-.img-logo{
+.img-logo {
     background-color: #419197;
     width: 14em;
     height: 3.5em;
     margin: 0.4em;
 }
 
-.menu{
+.menu {
     width: 50vw;
     background-color: #419197;
     display: flex;
@@ -34,7 +34,7 @@ body {
 
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     background-color: #419197;
     color: #FBF9F1;
@@ -42,16 +42,17 @@ body {
     padding: 10px 25px;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background-color: #E55807;
     border-radius: 50px;
     padding: 10px 25px;
 }
 
-.list{
+.list {
     list-style: none;
     background-color: #419197;
 }
+
 /* fin barra nav */
 
 /*------------------------------------------*/
@@ -66,17 +67,19 @@ img {
 }
 
 /* titles and subtitles */
-h2, h4 {
+h2,
+h4 {
     color: #12486B;
 }
 
-h2:hover, h4:hover {
+h2:hover,
+h4:hover {
     color: #E55807;
 }
 
 /* tutorials */
 .tutorial {
-    color:#E55807;
+    color: #E55807;
     margin-left: 5%;
     font-size: 0.8em;
     font-weight: normal;
@@ -90,7 +93,10 @@ h2:hover, h4:hover {
 }
 
 /* All description list of instruments */
-.list-drumset, .list-guitar, .list-piano, .list-kalimba {
+.list-drumset,
+.list-guitar,
+.list-piano,
+.list-kalimba {
     color: #12486B;
     font-family: Poppins;
     font-size: 0.9vw;
@@ -100,52 +106,63 @@ h2:hover, h4:hover {
 }
 
 /* All containers instruments */
-.drumset, .guitar, .piano, .kalimba {
+.drumset,
+.guitar,
+.piano,
+.kalimba {
     margin-top: 6%;
     margin-bottom: 5%;
 }
 
 /*------------------------------------------*/
 /* START DRUMSET AND PIANO SECTION*/
-.drumset, .piano {
+.drumset,
+.piano {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.drumset h2, .piano h2 {
-     margin-left: 5%;
+.drumset h2,
+.piano h2 {
+    margin-left: 5%;
 }
 
-.drumset img, .piano img {
+.drumset img,
+.piano img {
     border-radius: 0 20% 20% 0%;
 }
 
-.description-drumset, .description-piano {
+.description-drumset,
+.description-piano {
     margin-left: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.list-drumset, .list-piano {
+.list-drumset,
+.list-piano {
     margin: 5%;
     width: 30%;
     height: 50%;
     border-left: #E55807 0.3em solid;
-    padding-left: 4.5%;   
+    padding-left: 4.5%;
 }
+
 /* END DRUMSET AND PIANO SECTION */
 
 /* ---------------------------------------*/
 /* START GUITAR AND KALIMBA SECTION */
-.guitar, .kalimba {
+.guitar,
+.kalimba {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.guitar h2, .kalimba h2 {
+.guitar h2,
+.kalimba h2 {
     text-align: end;
     margin-right: 5%;
 }
@@ -155,11 +172,13 @@ h2:hover, h4:hover {
     margin-right: 5%;
 }
 
-.guitar img, .kalimba img {
+.guitar img,
+.kalimba img {
     border-radius: 20% 0% 0% 20%;
 }
 
-.description-guitar, .description-kalimba {
+.description-guitar,
+.description-kalimba {
     display: flex;
     align-items: center;
     margin-left: 5%;
@@ -170,7 +189,7 @@ h2:hover, h4:hover {
     width: 25%;
     height: 40%;
     border-left: #E55807 0.3em solid;
-    padding-left: 4.5%; 
+    padding-left: 4.5%;
 }
 
 .list-kalimba {
@@ -180,6 +199,7 @@ h2:hover, h4:hover {
     border-left: #E55807 0.3em solid;
     padding-left: 4.5%;
 }
+
 /* END GUITAR AND KALIMBA SECTION */
 /* ----------------------------------------------------------*/
 /* inicio footer */
@@ -187,39 +207,40 @@ h2:hover, h4:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .line{
+}
+
+.line {
     width: 95vw;
     background-color: #12486B;
     height: 1.5px;
-  }
-  
-  .section-footer{
+}
+
+.section-footer {
     width: 95vw;
     color: #12486B;
     font-size: 1.2vw;
     display: flex;
     justify-content: space-between;
     margin: 2%;
-  }
+}
 
-  .logos img {
+.logos img {
     width: 28px;
     height: 25px;
-  }
-  
-  .networks {
+}
+
+.networks {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-  }
-  
-  .f2 {
+}
+
+.f2 {
     text-align: right;
-  } 
-  /* fin footer */
+}
+
+/* fin footer */
 
 /*----------------------------*/
 /* MEDIA QUERIES */
@@ -246,31 +267,43 @@ h2:hover, h4:hover {
     .tutorial {
         font-size: 0.45em;
     }
+
     /* END ALL COMPONENTS INSTRUMENTS */
 
-/*---------------------------------------------*/
+    /*---------------------------------------------*/
     /* ALL CONTAINERS INSTRUMENT query */
 
-    .drumset, .guitar, .piano, .kalimba {
+    .drumset,
+    .guitar,
+    .piano,
+    .kalimba {
         align-items: center;
     }
 
-    .description-drumset, .description-guitar, .description-piano, .description-kalimba {
+    .description-drumset,
+    .description-guitar,
+    .description-piano,
+    .description-kalimba {
         flex-direction: column;
     }
 
-    .list-guitar, .list-kalimba {
+    .list-guitar,
+    .list-kalimba {
         border-right: #E55807 0.3em solid;
         padding-right: 4.5%;
         border-left: none;
         height: 30%;
         text-align: end;
     }
-    
-    .list-drumset, .list-guitar, .list-piano, .list-kalimba {
+
+    .list-drumset,
+    .list-guitar,
+    .list-piano,
+    .list-kalimba {
         font-size: 0.35em;
         font-weight: normal;
         width: 35%;
     }
+
     /* END ALL CONTAINERS INSTRUMENT query*/
 }
