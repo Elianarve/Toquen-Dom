@@ -232,13 +232,13 @@ body, html {
     .Coming-soon {
       padding: 12%;
       margin-left: 20vw;
-      margin-top: -10%;
+    
     }
 
 
 
     .lds-roller{
-      margin-top: -25%;
+      margin-top: -20%;
     }
 
     
@@ -294,13 +294,15 @@ body, html {
       margin-top: 10%;
       height: 200px;
       width: 300px;
+      margin-left: 8%;
   }
 
   .construccion {
      height: 400px;
      width: 250px;
      padding: 20px;
-   
+   margin-top: 8%;
+   margin-left: 5%;
 
     
   }
