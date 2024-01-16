@@ -70,10 +70,8 @@ body {
 /*Container for instruments*/
 
 #instruments {
-  width: 200px;
-  height: 200px;
   position: relative;
-  padding: 20%;
+  padding: 32%;
 }
 
 /*SUPERPOSICIONES DE LOS INSTRUMENTOS*/
@@ -86,77 +84,77 @@ body {
       width: 178px;
       height: 200px;
       top: 2em;
-      left: 21em;
+      left: 12em;
     }
 
     .hihat-close {
       width: 145px;
       height: 145px;
-      top: 10em;
-      left: 16em;
+      top: 10.5em;
+      left: 9em;
     }
 
     .hihat-opened {
       width: 145px;
       height: 145px;
-      top: 16.5em;
-      left: 12em;
+      top: 17.5em;
+      left: 6em;
     }
 
     .small-tom4 {
       width: 220px;
       height: 220px;
-      top: 10em;
-      left: 24em;
+      top: 10.5em;
+      left: 15em;
     }
 
     .medium-tom3 {
       width: 200px;
       height: 200px;
-      top: 6em;
-      left: 33em;
+      top: 9em;
+      left: 26em;
     }
 
     .kick-bombo {
       width: 400px;
       height: 250px;
-      top: 19em;
-      left: 35em;
+      top: 20.5em;
+      left: 25.5em;
     }
 
     .snare {
       width: 270px;
       height: 270px;
-      top: 17em;
-      left: 18em;
+      top: 19em;
+      left: 12em;
     }
 
     .floor-tom2 {
       width: 280px;
       height: 280px;
-      top: 4.5em;
-      left: 41em;
+      top: 7.5em;
+      left: 36em;
     }
 
     .floor-tom1 {
       width: 250px;
       height: 250px;
-      top: 9em;
-      left: 52em;
+      top: 20em;
+      left: 46em;
     }
 
     .crash-right {
       width: 200px;
       height: 200px;
-      top: 1.5em;
-      left: 58em;
+      top: 3em;
+      left: 48em;
     }
 
     .ride {
       width: 250px;
       height: 250px;
       top: 10em;
-      left: 64em;
+      left: 56em;
     }
 /* fin instrument */
 
