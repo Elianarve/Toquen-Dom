@@ -73,8 +73,6 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
-  display: flex;
-  align-items: center;
   padding: 20%;
 }
 
@@ -85,84 +83,80 @@ body {
     }
 
     .crash-left {
-      width: 200px;
+      width: 178px;
       height: 200px;
-      z-index: 1;
-      top: 12.5em;
-      left: 25em;
+      top: 2em;
+      left: 21em;
     }
 
     .hihat-close {
-      width: 180px;
-      height: 180px;
-      top: 20em;
-      left: 22em;
+      width: 145px;
+      height: 145px;
+      top: 10em;
+      left: 16em;
     }
 
     .hihat-opened {
-      width: 175px;
-      height: 175px;
-      z-index: 1;
-      top: 27.2em;
-      left: 20em;
+      width: 145px;
+      height: 145px;
+      top: 16.5em;
+      left: 12em;
     }
 
     .small-tom4 {
-      width: 200px;
-      height: 200px;
-      top: 17em;
-      left: 32em;
+      width: 220px;
+      height: 220px;
+      top: 10em;
+      left: 24em;
     }
 
     .medium-tom3 {
       width: 200px;
       height: 200px;
-      top: 16em;
-      left: 41em;
+      top: 6em;
+      left: 33em;
     }
 
     .kick-bombo {
-      z-index: -1;
       width: 400px;
       height: 250px;
-      top: 23em;
-      left: 34em;
+      top: 19em;
+      left: 35em;
     }
 
     .snare {
-      width: 230px;
-      height: 230px;
-      top: 26em;
-      left: 28em;
+      width: 270px;
+      height: 270px;
+      top: 17em;
+      left: 18em;
     }
 
     .floor-tom2 {
-      width: 230px;
-      height: 230px;
-      top: 20.3em;
-      left: 48em;
+      width: 280px;
+      height: 280px;
+      top: 4.5em;
+      left: 41em;
     }
 
     .floor-tom1 {
       width: 250px;
       height: 250px;
-      top: 27.8em;
-      left: 53.2em;
+      top: 9em;
+      left: 52em;
     }
 
     .crash-right {
       width: 200px;
       height: 200px;
-      top: 12em;
-      left: 49.7em;
+      top: 1.5em;
+      left: 58em;
     }
 
     .ride {
-      z-index: 1;
       width: 250px;
       height: 250px;
-      top: 18.2em;
-      left: 57em;
+      top: 10em;
+      left: 64em;
     }
 /* fin instrument */
 
