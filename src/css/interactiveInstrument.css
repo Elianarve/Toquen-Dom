@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
 
 *{
-    margin: auto;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
     background-color: #FBF9F1;
 }
+
 
 /* Inicio nav */
 
 .nav {
-    height: 130px;
     background-color: #419197;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3vw;
 }
 
 .img-logo{
-    width: auto;
-    height: auto;
-    margin: 20px;
-    object-fit: cover;
     background-color: #419197;
+    height: 7vw;
 }
 
 .menu{
-    width: 45%;
-    display: flex;
+    width: 40vw;
     background-color: #419197;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .menu li a{
@@ -43,25 +48,182 @@
 
 .list{
     list-style: none;
-    margin-left: 15%;
     background-color: #419197;
 }
 /* fin barra nav */
 
+/* inicio description */
+.description{
+    margin: 2vw;
+}
+
+.title{
+    color: #12486B;
+}
+
+.paragraph{
+    text-align: justify;
+}
+/* fin description */
+
+/*Container for instruments*/
+
+#instruments {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20%;
+}
+
+/*SUPERPOSICIONES DE LOS INSTRUMENTOS*/
+    .crash-left, .hihat-opened, .hihat-close, .small-tom4, .medium-tom3, .kick-bombo,
+    .snare, .floor-tom2, .floor-tom1, .crash-right, .ride {
+      position: absolute;
+    }
+
+    .crash-left {
+      width: 200px;
+      height: 200px;
+      z-index: 1;
+      top: 12.5em;
+      left: 25em;
+    }
+
+    .hihat-close {
+      width: 180px;
+      height: 180px;
+      top: 20em;
+      left: 22em;
+    }
+
+    .hihat-opened {
+      width: 175px;
+      height: 175px;
+      z-index: 1;
+      top: 27.2em;
+      left: 20em;
+    }
+
+    .small-tom4 {
+      width: 200px;
+      height: 200px;
+      top: 17em;
+      left: 32em;
+    }
+
+    .medium-tom3 {
+      width: 200px;
+      height: 200px;
+      top: 16em;
+      left: 41em;
+    }
+
+    .kick-bombo {
+      z-index: -1;
+      width: 400px;
+      height: 250px;
+      top: 23em;
+      left: 34em;
+    }
+
+    .snare {
+      width: 230px;
+      height: 230px;
+      top: 26em;
+      left: 28em;
+    }
+
+    .floor-tom2 {
+      width: 230px;
+      height: 230px;
+      top: 20.3em;
+      left: 48em;
+    }
+
+    .floor-tom1 {
+      width: 250px;
+      height: 250px;
+      top: 27.8em;
+      left: 53.2em;
+    }
+
+    .crash-right {
+      width: 200px;
+      height: 200px;
+      top: 12em;
+      left: 49.7em;
+    }
+
+    .ride {
+      z-index: 1;
+      width: 250px;
+      height: 250px;
+      top: 18.2em;
+      left: 57em;
+    }
+/* fin instrument */
+
+ #img-crash-l:active, #img-crash-r:active,  #img-tom-1:active,
+ #img-small-tom:active, #img-bombo:active, #img-snare:active,
+ #img-snare:active, #img-hi-hat-c:active, #img-hi-hat-o:active,
+ #img-ride:active, #img-tom-2:active,  #img-medium-tom:active
+   {
+    animation: shake 0.30s;
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+/* fin instrument */
 
 /* inicio footer */
 
+ .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .line{
-    width: 95%;
-    background-color: #12486B;
-    height: 2px;
+  width: 95vw;
+  background-color: #12486B;
+  height: 2px;
 }
 
 .section-footer{
-    color: #12486B;
-    font-size: 20px;
-    font-weight: 200;
-    display: flex;
-    margin: 3% 0;
+  width: 95vw;
+  color: #12486B;
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
 }
+
+.networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f2 {
+  text-align: right;
+} 
+
 /* fin footer */
