@@ -301,7 +301,7 @@ body {
   }
 }
 
-/* Ajusta el estilo para tabletas en orientación horizontal */
+/* Ajustar el estilo para tabletas en orientación horizontal */
 /* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body{
     overflow: hidden;
