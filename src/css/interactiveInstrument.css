@@ -311,15 +311,15 @@ body {
   
   #instruments {
       padding: 5%; /* Ajusta el relleno del contenedor de instrumentos */
-      margin-top: -25%;
+      /* margin-top: -25%;
       margin-left: -35%;
       position: relative;
       display: flex;
-      align-items: center;
+      align-items: center; */
        
-  }
+  /* } */
   
-  .nav{
+  /* .nav{
     display: none;
   }
   .footer{
@@ -332,10 +332,10 @@ body {
 .snare, .floor-tom2, .floor-tom1, .crash-right, .ride {
   
    position: absolute;
-}
+} */
 
-}
+/* } */
 
 
 
- */
+
