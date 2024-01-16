@@ -2,10 +2,57 @@
 
 *{
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FBF9F1;
 }
 
 /* Inicio nav */
+
+.nav {
+    background-color: #419197;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.img-logo{
+    background-color: #419197;
+    width: 14em;
+    height: 3.5em;
+    margin: 0.4em;
+}
+
+.menu{
+    width: 50vw;
+    background-color: #419197;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    background-color: #419197;
+    color: #FBF9F1;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.menu li a:hover{
+    background-color: #E55807;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+.list{
+    list-style: none;
+    background-color: #419197;
+}
+/* fin barra nav */
 
 /*------------------------------------------*/
 
@@ -134,10 +181,49 @@ h2:hover, h4:hover {
     padding-left: 4.5%;
 }
 /* END GUITAR AND KALIMBA SECTION */
+/* ----------------------------------------------------------*/
+/* inicio footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .line{
+    width: 95vw;
+    background-color: #12486B;
+    height: 1.5px;
+  }
+  
+  .section-footer{
+    width: 95vw;
+    color: #12486B;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+  }
+
+  .logos img {
+    width: 28px;
+    height: 25px;
+  }
+  
+  .networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .f2 {
+    text-align: right;
+  } 
+  /* fin footer */
 
 /*----------------------------*/
 /* MEDIA QUERIES */
-@media screen and (max-width: 760px) {
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
 
     /*ALL COMPONENTS OF INSTRUMENTS query*/
     h2 {
