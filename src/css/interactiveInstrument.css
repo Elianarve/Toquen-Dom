@@ -70,6 +70,8 @@ body {
 /*Container for instruments*/
 
 #instruments {
+  background-color: #12486B;
+  width: 1366px;
   position: relative;
   padding: 32%;
 }
@@ -84,22 +86,22 @@ body {
     .crash-left {
       width: 178px;
       height: 200px;
-      top: 2em;
-      left: 12em;
+      top: 10px;
+      left: 230px;
     }
 
     .hihat-close {
       width: 145px;
       height: 145px;
-      top: 10.5em;
-      left: 9em;
+      top: 170px;
+      left: 150px;
     }
 
     .hihat-opened {
       width: 145px;
       height: 145px;
-      top: 17.5em;
-      left: 6em;
+      top: 310px;
+      left: 95px;
     }
 
     .small-tom4 {
