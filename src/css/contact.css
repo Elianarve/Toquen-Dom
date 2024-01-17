@@ -142,6 +142,8 @@ input, textarea {
 .formulario__input-error {
 	color: #ff0000;
 	font-size: 0.7rem;
+	margin-left: 2rem;
+	margin-right: 0.8rem;
 	margin-bottom: 0;
 	display: none; /*Para que los mensajes estén ocultos y sólo se muestren cuando haya un error en el input */
 }

@@ -15,23 +15,26 @@ const campos = {
     message: false,
 }
 
-// --- Función de tipo flecha para cuando se deje de presionar cada tecla o se haga click fuera del input
+// --- Función de tipo flecha para cuando se deje de presionar cada tecla o se haga click fuera del input ---
 const validarFormulario = (e) => {
-	switch (e.target.name) {
+	switch (e.target.name) {  //Para identificar cuál de los inputs queremos validar.
 		case "nombre":
-			validarCampo(expresiones.nombre, e.target, 'nombre');
+			validarCampo(expresiones.nombre, e.target, 'nombre'); //Para que lo que estemos escribiendo en este input coincida con su expresión regular
 		break;
 		case "email":
-			validarCampo(expresiones.email, e.target, 'mail');
+			validarCampo(expresiones.email, e.target, 'email');
 		break;
 		case "phone":
 			validarCampo(expresiones.phone, e.target, 'phone');
 		break;
+		case "message":
+			validarCampo(expresiones.message, e.target, 'message');
+		break;
 	}
 }
-
-const validarCampo = (expresion, input, campo) => {
-	if(expresion.test(input.value)){
+// --- Función flecha para reutilizarla dentro del bucle switch anterior ---
+const validarCampo = (expresion, input, campo) => {  //Le pasamos los valores a la función: expresion regular(ej:expresiones.nombre), input(e.target) y campo('nombre', 'phone' etc)
+	if(expresion.test(input.value)){  // 
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
@@ -50,14 +53,14 @@ const validarCampo = (expresion, input, campo) => {
 
 // --- Comprobación cuando usuario escriba o dé un click fuera del input
 inputs.forEach((input) => {  //Para que por cada input ejecute un codigo
-	input.addEventListener('keyup', validarFormulario); //Al dejar de presionar una tecla queremos que compruebe el campo del input
-	input.addEventListener('blur', validarFormulario); //Cuando demos un click fuera del campo que lo compruebe
+	input.addEventListener('keyup', validarFormulario); //Al dejar de presionar una tecla queremos que compruebe el campo del input.
+	input.addEventListener('blur', validarFormulario); //Cuando demos un click fuera del input que lo compruebe.
 });
 
 // --- Comprobación cuando se pulse el btn Enviar ---
 formulario.addEventListener('submit', (e) => {  //Para ejecutar la función de enviar formulario
 	e.preventDefault();  //Si quisiera enviar los datos a otra pagina esto no se pondría.
-});
+
 
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.email && campos.phone && campos.message && terminos.checked ){
@@ -74,3 +77,4 @@ formulario.addEventListener('submit', (e) => {  //Para ejecutar la función de e
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
+});
