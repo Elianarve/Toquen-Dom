@@ -337,14 +337,13 @@ input, textarea {
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
-
-	/* inicio menu hamburguesa */
-.hamburguer,
-.toggle-menu {
+/* inicio menu hamburguesa */
+	.hamburguer,
+	.toggle-menu {
 	display: block;
-}
+	}
 
-.menu {
+	.menu {
 	justify-content: start;
 	flex-direction: column;
 	position: fixed;
@@ -353,43 +352,49 @@ input, textarea {
 	margin-top: 70%;
 	margin-left: 15%;
 	padding: 10%;
-}
+	}
 
-.menu li a{
-	font-size: 16px;
-}
+	.menu li a{
+		font-size: 16px;
+	}
 
-.list{
-	margin-top: 50%;
-	text-align: end;
-	margin-right: 30%;
-}
+	.list{
+		margin-top: 50%;
+		text-align: end;
+		margin-right: 30%;
+	}
 /* fin menu hamburguesa */
 
 /* inicio nav */
- .img-logo{
-	height: 10vw;
-	margin: 1%;
- }
+	.img-logo{
+		height: 10vw;
+		margin: 1%;
+	}
 
- .nav{
-	height: 15vw;
-	padding: 2%;
- }
+	.nav{
+		height: 15vw;
+		padding: 2%;
+	}
 
 /* fin nav */
+
+/* Inicio formulario*/
 	.formulario {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
+	h2 {
+		font-size: 1.2rem;
 	}
 
-	.formulario__btn {
-		width: 100%;
+	.formulario__label {
+		font-size: 0.8rem;
+		text-align: left;
+		margin-left: 1rem;
+	}
+
+	.formulario__input, .formulario__btn {
+		width: 70%;
 	}
 }
