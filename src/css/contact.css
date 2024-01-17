@@ -11,14 +11,6 @@ main {
     justify-content: center;
 }
 
-/*body {
-    background: linear-gradient(0deg, #FBF9F1, #419197);
-    display: flex;
-	flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}*/
-
 /* menu hamburguesa */
 .navigation {
     display: flex;
@@ -151,7 +143,7 @@ main {
     border: 3px solid #12486B;
     background: rgba(18, 72, 107, 0.60);
     box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
-	/*margin-top: 2rem;*/
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -333,6 +325,54 @@ input, textarea {
 .formulario__grupo-incorrecto .formulario__input { /*Para que el borde del input se muestre en rojo al tener un error*/
 	border: 3px solid #ff0000;
 }
+/* Fin formulario */
+
+/* inicio footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between;
+    margin: 1vw; */
+}
+
+.line{
+    width: 95vw;
+    background-color: #12486B;
+    height: 2px;
+}
+
+.section-footer{
+    width: 95vw;
+    color: #12486B;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy, 
+.copyright{
+    font-size: 18px;
+}
+
+.f2 {
+    text-align: right;
+    font-size: 18px;
+}
+
+.redes-logo {
+    width: 35px;  
+    height: 35px;
+}
+/* fin footer */
 
 
 /* ----- -----  Mediaqueries ----- ----- */
@@ -398,3 +438,32 @@ input, textarea {
 		width: 70%;
 	}
 }
+/* Fin formulario */
+
+/* inicio footer */
+.line{
+    margin-left: 2%;
+}
+
+.section-footer{
+    display: contents;
+}
+
+.copyright{
+    font-size: 24px;
+}
+
+.networks {
+font-size: 18px;
+}
+
+.logos{
+    font-size: 30px;
+}
+
+.f2 {
+    font-size: 24px;
+    line-height: 80%;
+    text-align: center;
+}
+/* fin footer */
