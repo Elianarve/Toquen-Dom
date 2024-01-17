@@ -10,26 +10,29 @@
     <title>Toquen el DOM</title>
 </head>
 <body>
-    <!-- Inicio nav -->
-    <nav class="nav">
-        <img class="img-logo" src="../public/assets/img/logo.png" alt="img-logo">
-        <ul class="menu">
-            <li class="list">
-                <a href="./index.html">INICIO</a>
-            </li>
-            <li class="list">
-                <a href="./index.html">INSTRUMENTOS</a>
-            </li>
-            <li class="list">
-                <a href="./index.html">NOSOTRAS</a>
-            </li>
-            
-            <li class="list">
-                <a href="./index.html">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- fin nav -->
+<!-- Inicio nav -->
+<nav class="nav">
+    <img class="img-logo" src="../public/assets/img/logo.png" alt="img-logo">
+    <div class="navigation">
+    <input type="checkbox" class="toggle-menu">
+    <div class="hamburguer"></div>
+    <ul class="menu">
+        <li class="list">
+            <a href="./index.html">INICIO</a>  
+        </li>
+        <li class="list">
+            <a href="./index.html">INSTRUMENTOS</a>
+        </li>
+        <li class="list">
+            <a href="./index.html">NOSOTRAS</a>
+        </li>
+        <li class="list">
+            <a href="./index.html">CONTACTO</a>
+        </li>
+    </ul>
+</div>
+</nav>
+<!-- fin nav -->
 
     <!-- inicio description -->
     <section class="description">
@@ -43,6 +46,12 @@
         </p>
     </section>
  <!-- fin description -->
+
+<!-- imagen responsive -->
+ <img class="centered-image" src="../public/assets/img/rota.png" alt="Imagen Responsiva">
+
+ <!-- Texto debajo de la imagen, solo en dispositivos responsivos -->
+<p class="responsive-text"><strong>Please, rotate your screen.</strong></p>
 
     <!-- inicio instrument -->
     <div id="instruments">
