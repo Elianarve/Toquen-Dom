@@ -70,7 +70,6 @@ body {
 /*Container for instruments*/
 
 #instruments {
-  background-color: #12486B;
   width: 1366px;
   position: relative;
   padding: 32%;
@@ -81,6 +80,7 @@ body {
     .crash-left, .hihat-opened, .hihat-close, .small-tom4, .medium-tom3, .kick-bombo,
     .snare, .floor-tom2, .floor-tom1, .crash-right, .ride {
       position: absolute;
+      margin-left: 20px;
     }
 
     .crash-left {
@@ -107,57 +107,57 @@ body {
     .small-tom4 {
       width: 220px;
       height: 220px;
-      top: 10.5em;
-      left: 15em;
+      top: 200px;
+      left: 270px;
     }
 
     .medium-tom3 {
       width: 200px;
       height: 200px;
-      top: 9em;
-      left: 26em;
+      top: 130px;
+      left: 480px;
     }
 
     .kick-bombo {
       width: 400px;
       height: 250px;
-      top: 20.5em;
-      left: 25.5em;
+      top: 350px;
+      left: 450px;
     }
 
     .snare {
       width: 270px;
       height: 270px;
-      top: 19em;
-      left: 12em;
+      top: 370px;
+      left: 180px;
     }
 
     .floor-tom2 {
       width: 280px;
       height: 280px;
-      top: 7.5em;
-      left: 36em;
+      top: 95px;
+      left: 650px;
     }
 
     .floor-tom1 {
       width: 250px;
       height: 250px;
-      top: 20em;
-      left: 46em;
+      top: 270px;
+      left: 850px;
     }
 
     .crash-right {
       width: 200px;
       height: 200px;
-      top: 3em;
-      left: 48em;
+      top: 10px;
+      left: 880px;
     }
 
     .ride {
       width: 250px;
       height: 250px;
-      top: 10em;
-      left: 56em;
+      top: 120px;
+      left: 1080px;
     }
 /* fin instrument */
 
