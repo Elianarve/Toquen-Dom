@@ -204,7 +204,7 @@ input, textarea {
 	font-weight: bold;
 	border: none;
 	border-radius: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	cursor: pointer;
 	transition: .1s ease all; /*Transición de 1seg para todas las propiedades*/
 }
@@ -216,7 +216,11 @@ input, textarea {
 .formulario__mensaje-exito { /*Mensaje Enviado correctamente!*/
 	font-size: 1rem;
 	color: #E55807;
-	display: none; /*Oculto para que solo se muestre cuando estén todos los inputs correctos*/
+	font-size: 1.2rem;
+	margin-left: 2rem;
+	margin-right: 0.8rem;
+	margin-bottom: 1rem;
+	/*display: none;*/ /*Oculto para que solo se muestre cuando estén todos los inputs correctos*/
 }
 
 .formulario__mensaje-exito-activo { /*Modificador que mostrará el mensaje de enviado correctamente*/
