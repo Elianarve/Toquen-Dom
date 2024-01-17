@@ -26,7 +26,7 @@ body {
 }
 
 .menu{
-    width: 40vw;
+    width: 50vw;
     background-color: #419197;
     display: flex;
     justify-content: space-evenly;
@@ -38,6 +38,7 @@ body {
     background-color: #419197;
     color: #FBF9F1;
     font-weight: bold;
+    padding: 10px 25px;
 }
 
 .menu li a:hover{
@@ -69,14 +70,8 @@ body {
 /*Container for instruments*/
 
 #instruments {
-  width: 200px;
-  height: 200px;
   position: relative;
-  display: flex;
-  align-items: center;
-  padding: 20%;
-  cursor: url("/public/assets/img/drumstick.png"), auto;
-  
+  padding: 32%;
 }
 
 /*SUPERPOSICIONES DE LOS INSTRUMENTOS*/
@@ -86,84 +81,80 @@ body {
     }
 
     .crash-left {
-      width: 200px;
+      width: 178px;
       height: 200px;
-      z-index: 1;
-      top: 12.5em;
-      left: 25em;
+      top: 2em;
+      left: 12em;
     }
 
     .hihat-close {
-      width: 180px;
-      height: 180px;
-      top: 20em;
-      left: 22em;
+      width: 145px;
+      height: 145px;
+      top: 10.5em;
+      left: 9em;
     }
 
     .hihat-opened {
-      width: 175px;
-      height: 175px;
-      z-index: 1;
-      top: 27.2em;
-      left: 20em;
+      width: 145px;
+      height: 145px;
+      top: 17.5em;
+      left: 6em;
     }
 
     .small-tom4 {
-      width: 200px;
-      height: 200px;
-      top: 17em;
-      left: 32em;
+      width: 220px;
+      height: 220px;
+      top: 10.5em;
+      left: 15em;
     }
 
     .medium-tom3 {
       width: 200px;
       height: 200px;
-      top: 16em;
-      left: 41em;
+      top: 9em;
+      left: 26em;
     }
 
     .kick-bombo {
-      z-index: -1;
       width: 400px;
       height: 250px;
-      top: 23em;
-      left: 34em;
+      top: 20.5em;
+      left: 25.5em;
     }
 
     .snare {
-      width: 230px;
-      height: 230px;
-      top: 26em;
-      left: 28em;
+      width: 270px;
+      height: 270px;
+      top: 19em;
+      left: 12em;
     }
 
     .floor-tom2 {
-      width: 230px;
-      height: 230px;
-      top: 20.3em;
-      left: 48em;
+      width: 280px;
+      height: 280px;
+      top: 7.5em;
+      left: 36em;
     }
 
     .floor-tom1 {
       width: 250px;
       height: 250px;
-      top: 27.8em;
-      left: 53.2em;
+      top: 20em;
+      left: 46em;
     }
 
     .crash-right {
       width: 200px;
       height: 200px;
-      top: 12em;
-      left: 49.7em;
+      top: 3em;
+      left: 48em;
     }
 
     .ride {
-      z-index: 1;
       width: 250px;
       height: 250px;
-      top: 18.2em;
-      left: 57em;
+      top: 10em;
+      left: 56em;
     }
 /* fin instrument */
 

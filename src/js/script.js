@@ -51,8 +51,10 @@ if (id == 'img-tom-2' || id == 'j'){
   if (id == 'img-bombo' || id == 'b'){
       const bombo = document.getElementById("audio-bombo");
       bombo.play();
+      console.log(bombo)
       const imgBombo = document.getElementById('img-bombo');
       imgBombo.animate(keyframes, 200); 
+      console.log(imgBombo)
   }
   if (id == 'img-snare' || id == 'c' || id == 'v'){
       const snare = document.getElementById("audio-snare");
