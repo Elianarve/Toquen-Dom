@@ -145,7 +145,7 @@ body {
   max-width: auto;
   position: relative;
   padding: 25%;
-  cursor: url("/public/assets/img/drumstick.png");
+  cursor: url('/public/assets/img/drumstick.png'), auto;
 }
 
 .centered-image {
