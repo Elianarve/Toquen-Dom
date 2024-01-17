@@ -95,9 +95,10 @@ body {
 
 .img-logo {
     background-color: #419197;
+    /* height: 7vw; */
     width: 13.8em;
     height: 3.5em;
-    margin: 0.4em;
+    margin: 0.5em;
 }
 
 .menu {
@@ -350,7 +351,8 @@ h4:hover {
 
     /* inicio nav */
     .img-logo{
-        height: 10vw;
+        width: 65px;
+        height: 15px;
         margin: 1%;
      }
 
