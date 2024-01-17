@@ -136,18 +136,18 @@ body, html {
 
 /* Sección "Coming Soon" con dimensiones y posición específicas */
 .Coming-soon {
-  width: 30%;
-  height: 25%;
-  margin-left: 65vw; /* Ajusta según sea necesario */
-  margin-top: 2%; /* Ajusta según sea necesario */
+  width: 35%;
+  height: 30%;
+  margin-left: 62vw; /* Ajusta según sea necesario */
+  margin-top: 1%; /* Ajusta según sea necesario */
 }
 
 /* Sección "Construcción" con dimensiones, relleno y posición específicos */
 .construccion {
-  width: 40%;
-  height: 20%;
+  width: 47%;
+  height: 60%;
   padding: 20px; /* Ajusta según sea necesario */
-  margin-top: -12%;
+  margin-top: -15%;
 }
 
 /* Línea amarilla fija en la parte inferior de la ventana */
@@ -168,7 +168,7 @@ body, html {
   width: 80px;
   height: 80px;
   left: 55%; /* Centra horizontalmente en el 50% del ancho de la ventana */
-  top: 50%; /* Centra verticalmente en el 50% de la altura de la ventana */
+  top:40%; /* Centra verticalmente en el 50% de la altura de la ventana */
   transform: translate(-50%, -50%); /* Centra el contenido correctamente */
 }
   
