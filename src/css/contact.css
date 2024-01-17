@@ -143,8 +143,8 @@ main {
     border: 3px solid #12486B;
     background: rgba(18, 72, 107, 0.60);
     box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
 }
 
 h2 {
@@ -224,8 +224,10 @@ input, textarea {
 .formulario__input-error {
 	color: #ff0000;
 	font-size: 0.7rem;
+	text-shadow: 2px 1px 1px black;
+	margin-top: 1rem;
 	margin-left: 2rem;
-	margin-right: 0.8rem;
+	margin-right: 0.75rem;
 	margin-bottom: 0;
 	display: none; /*Para que los mensajes estén ocultos y sólo se muestren cuando haya un error en el input */
 }
@@ -286,7 +288,7 @@ input, textarea {
 	font-weight: bold;
 	border: none;
 	border-radius: 2rem;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 	cursor: pointer;
 	transition: .1s ease all; /*Transición de 1seg para todas las propiedades*/
 }
