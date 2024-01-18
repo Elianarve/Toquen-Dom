@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	margin: 0; 
 }
 
@@ -85,22 +85,19 @@ main {
 /* fin menu hamburguesa */
 
 /* Inicio nav */
-
 .nav {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
     background-color: #419197;
     display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.3vw;
-	/*width: 100%;*/
 }
 
-.img-logo {
-    /*object-fit: cover;*/
+.img-logo{
     background-color: #419197;
-	height: 3.5em;
-	margin: 0.4em;
+    height: 5vw;
+    margin: 0.5em;
 }
 
 .menu{
@@ -115,7 +112,7 @@ main {
     background-color: #419197;
     color: #FBF9F1;
     font-weight: bold;
-	padding: 10px 25px;
+    padding: 10px 25px;
 }
 
 .menu li a:hover{
@@ -138,12 +135,14 @@ main {
 	flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
+	box-sizing: border-box;
+	padding: 3%;
+    width: 23%;
     border-radius: 2.5em;
     border: 3px solid #12486B;
     background: rgba(18, 72, 107, 0.60);
     box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
-	margin-top: 3rem;
+	/*margin-top: 3rem;*/
 	margin-bottom: 4rem;
 }
 
@@ -154,7 +153,6 @@ h2 {
     text-align: center; 
     margin: 0; 
     width: 100%;
-    margin-top: 2rem;
 }
 
 input, textarea {
@@ -178,7 +176,6 @@ input, textarea {
     font-weight: 700;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-	margin-left: 2rem;
 	display: block; /* Para abarcar el 100% */
 	cursor: pointer;
     text-align: left;
@@ -212,10 +209,10 @@ input, textarea {
     color: #12486B;
     font-size: 0.75rem;
     font-weight: 700;
-    margin-top: 1rem;
+    margin-top: 2rem;
 	display: block;
 	width: 100%;
-	padding: 1rem;
+	/*padding: 1rem;*/
 	cursor: pointer;
     text-align: center;
 }
@@ -226,9 +223,8 @@ input, textarea {
 	font-size: 0.7rem;
 	text-shadow: 2px 1px 1px black;
 	margin-top: 1rem;
-	margin-left: 2rem;
-	margin-right: 0.75rem;
-	margin-bottom: 0;
+	text-justify: center;
+	/*margin-bottom: 0;*/
 	display: none; /*Para que los mensajes estén ocultos y sólo se muestren cuando haya un error en el input */
 }
 
@@ -238,15 +234,15 @@ input, textarea {
 
 .formulario__validacion-estado { 
 	position: absolute; /*Para posicionar el icono de error*/
-	right: 40px;
-	bottom: 8px;
+	right: 0px;
+	bottom: 9px;
 	z-index: 100; /*Aseguro que siempre va a estar por encima de otros elementos*/
 	font-size: 16px;
 	opacity: 0; /*Para que no se vea hasta que haya un error */
 }
 
 .formulario__checkbox { /*Para separar el checkbox del texto Acepto terminos y condiciones*/
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .formulario__grupo-terminos, 
@@ -258,7 +254,7 @@ input, textarea {
 .formulario__mensaje {
 	background: #F66060;
 	padding: 0 1rem;
-	margin-bottom: 1rem;
+	/*margin-bottom: 1rem;*/
 	border-radius: 3px;
 	display: none; /*Para que esté oculto y solo se muestre cuando esté activo*/
 }
@@ -283,12 +279,12 @@ input, textarea {
 	width: 50%;
 	background: #E55807;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #FBF9F1;
 	font-weight: bold;
 	border: none;
 	border-radius: 2rem;
-	margin-bottom: 3rem;
+	margin-top: 1rem;
 	cursor: pointer;
 	transition: .1s ease all; /*Transición de 1seg para todas las propiedades*/
 }
@@ -298,10 +294,9 @@ input, textarea {
 }
 
 .formulario__mensaje-exito { /*Mensaje ¡ENVIADO!*/
-	font-size: 1rem;
 	color: #FBF9F1;
 	font-size: 1.2rem;
-	margin-bottom: 1rem;
+	margin-top: 1rem;
 	display: none; /*Oculto para que solo se muestre cuando estén todos los inputs correctos*/
 }
 
@@ -332,11 +327,12 @@ input, textarea {
 /* inicio footer */
 
 .footer {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between;
-    margin: 1vw; */
+     justify-content: space-between;
+    margin: 1vw;
 }
 
 .line{
@@ -380,43 +376,43 @@ input, textarea {
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
 /* inicio menu hamburguesa */
-	.hamburguer,
-	.toggle-menu {
-	display: block;
-	}
+.hamburguer,
+    .toggle-menu {
+        display: block;
+    }
 
-	.menu {
-	justify-content: start;
-	flex-direction: column;
-	position: fixed;
-	width: 135px;
-	height: auto;
-	margin-top: 70%;
-	margin-left: 15%;
-	padding: 10%;
-	}
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        position: fixed;
+        width: 135px;
+        height: auto;
+        margin-top: 70%;
+        margin-left: 15%;
+        padding: 10%;
+    }
 
-	.menu li a{
-		font-size: 16px;
-	}
+    .menu li a{
+        font-size: 16px;
+    }
 
-	.list{
-		margin-top: 50%;
-		text-align: end;
-		margin-right: 30%;
-	}
+    .list{
+        margin-top: 50%;
+        text-align: end;
+        margin-right: 30%;
+    }
 /* fin menu hamburguesa */
 
 /* inicio nav */
-	.img-logo{
-		height: 10vw;
-		margin: 1%;
-	}
+     .img-logo{
+        height: 10vw;
+        margin: 1%;
+     }
 
-	.nav{
-		height: 15vw;
-		padding: 2%;
-	}
+     .nav{
+        height: 15vw;
+        padding: 2%;
+     }
 
 /* fin nav */
 
@@ -433,13 +429,16 @@ input, textarea {
 	.formulario__label {
 		font-size: 0.8rem;
 		text-align: left;
-		margin-left: 1rem;
 	}
 
-	.formulario__input, .formulario__btn {
-		width: 70%;
+	.formulario__input {
+		width: 30%;
 	}
 }
+
+    .formulario__btn {
+        width: 70%;
+    }
 /* Fin formulario */
 
 /* inicio footer */
