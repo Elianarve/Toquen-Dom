@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/interactiveInstrument.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Toquen el DOM</title>
+</head>
+<body>
+<!-- Inicio nav -->
+<nav class="nav">
+    <img class="img-logo" src="../public/assets/img/logo.png" alt="img-logo">
+    <div class="navigation">
+    <input type="checkbox" class="toggle-menu">
+    <div class="hamburguer"></div>
+    <ul class="menu">
+        <li class="list">
+            <a href="./index.html">INICIO</a>  
+        </li>
+        <li class="list">
+            <a href="./index.html">INSTRUMENTOS</a>
+        </li>
+        <li class="list">
+            <a href="./index.html">NOSOTRAS</a>
+        </li>
+        <li class="list">
+            <a href="./index.html">CONTACTO</a>
+        </li>
+    </ul>
+</div>
+</nav>
+<!-- fin nav -->
+
+    <!-- inicio description -->
+    <section class="description">
+        <h1 class="title">Bateria Virtual</h1>
+        <p class="paragraph">
+            Aprender a tocar la batería es una experiencia emocionante que combina coordinación,
+             ritmo y expresión musical. Para comenzar, es crucial familiarizarse con la disposición
+             básica de la batería, que incluye la caja, los toms, la caja china, los platillos
+              y el bombo. Practica la posición correcta de las baquetas y trabaja en la técnica
+               de golpeo para obtener un sonido claro y consistente.
+        </p>
+    </section>
+ <!-- fin description -->
+
+<!-- imagen responsive -->
+ <img class="centered-image" src="../public/assets/img/rota.png" alt="Imagen Responsiva">
+
+ <!-- Texto debajo de la imagen, solo en dispositivos responsivos -->
+<p class="responsive-text"><strong>Please, rotate your screen.</strong></p>
+
+    <!-- inicio instrument -->
+    <div id="instruments">
+        <div id="crash">
+            <img class="crash-left" id="img-crash-l" src="../public/assets/img/crash-l.png" alt="img-crash">
+           <audio id='audio-crash' src="../public/assets/audio/09._Crash_1_edit (1).mp3"></audio>
+        </div>
+
+        <div id="crash">
+            <img class="crash-right" id="img-crash-r" src="../public/assets/img/crash-r.png" alt="img-crash">
+           <audio id='audio-crash' src="../public/assets/audio/10._Crash_2_edit (1).mp3"></audio>
+        </div>
+
+        <div id="tom-base-1">
+            <img class="floor-tom1" id="img-tom-1" src="../public/assets/img/Floor Tom 1.png" alt="img-tom-base">
+            <audio id="audio-tom-base-1" src="../public/assets/audio/03._Floor-tom1_edit (1).mp3"></audio>
+        </div>
+
+    <div id="small-tom">
+            <img class="small-tom4" id="img-small-tom" src="../public/assets/img/Small Tom 5.png" alt="img-small-tom">
+            <audio id="audio-small-tom" src="../public/assets/audio/06._Small-tom4_edit (1).mp3"></audio>
+        </div>
+
+        <div id="tom-2">
+            <img class="floor-tom2" id="img-tom-2" src="../public/assets/img/Floor Tom 2.png" alt="img-tom">
+            <audio id="audio-tom-2" src="../public/assets/audio/04._Floor-tom2_edit (1).mp3"></audio>
+        </div>
+
+        <div id="medium-tom">
+            <img class="medium-tom3" id="img-medium-tom" src="../public/assets/img/Medium Tom  3.png" alt="img-tom">
+            <audio id="audio-medium-tom" src="../public/assets/audio/05._Medium-tom3_edit (1).mp3"></audio>
+        </div>
+
+        <div id="bombo">
+            <img class="kick-bombo" id="img-bombo" src="../public/assets/img/kick.png" alt="img-bombo">
+            <audio id='audio-bombo' src="../public/assets/audio/01._Kick_edit (1).mp3"></audio>
+        </div>
+
+        <div id="snare">
+            <img class="snare" id="img-snare" src="../public/assets/img/Snare.png" alt="img-snare">
+            <audio id="audio-snare" src="../public/assets/audio/02._Snare_edit (1).mp3"></audio>
+        </div>
+
+        <div id="hi-hat-c">
+            <img class="hihat-close" id="img-hi-hat-c" src="../public/assets/img/hi-hat-C.png" alt="img-hit-hat">
+            <audio id="audio-hi-hat-c" src="../public/assets/audio/07._Hi-Hat_close_edit (1).mp3"></audio>
+        </div>
+
+        <div id="hi-hat-o">
+            <img class="hihat-opened" id="img-hi-hat-o" src="../public/assets/img/hi-hat-O.png" alt="img-hit-hat">
+            <audio id="audio-hi-hat-o" src="../public/assets/audio/08._Hi-Hat-Open_edit (1).mp3"></audio>
+        </div>
+
+        <div id="ride">
+            <img class="ride" id="img-ride" src="../public/assets/img/Ride.png" alt="img-ride">
+           <audio id='audio-ride' src="../public/assets/audio/11._Ride_edit (1).mp3"></audio>
+        </div>
+
+    </div>
+     <!-- fin instrument -->
+
+     <!-- Inicio de la tabla -->
+    <div class="responsiveTable">
+        <div class="aling">
+            <table>
+                <tr>
+                    <th>Componente</th>
+                    <th>Tecla</th>
+                </tr>
+                <tr>
+                    <td>Crash L</td>
+                    <td>r</td>
+                </tr>
+                <tr>
+                    <td>Crash R</td>
+                    <td>u</td>
+                </tr>
+                <tr>
+                    <td>Hi Hat O</td>
+                    <td>m</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Componente</th>
+                    <th>Tecla</th>
+                <tr>
+                    <td>Small Tom</td>
+                    <td>s</td>
+                </tr>
+                <tr>
+                    <td>Medium Tom</td>
+                    <td>h-g</td>
+                </tr>
+                <tr>
+                    <td>Ride</td>
+                    <td>i</td>
+                </tr>
+            </table>
+        </div>
+        <div class="aling">
+            <table>
+                <tr>
+                    <th>Componente</th>
+                    <th>Tecla</th>
+                </tr>
+                <tr>
+                    <td>Tom</td>
+                    <td>k</td>
+                </tr>
+                <tr>
+                    <td>Tom 2</td>
+                    <td>j</td>
+                </tr>
+                <tr>
+                    <td>Kick</td>
+                    <td>b</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Componente</th>
+                    <th>Tecla</th>
+                </tr>
+                <tr>
+                    <td>Hi Hat C</td>
+                    <td>n</td>
+                </tr>
+                <tr>
+                    <td>Snare</td>
+                    <td>c-v</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <!-- Fin de la tabla -->
+
+        <!-- inicio footer -->
+        <section class="footer">
+            <hr class="line">
+            <section class="section-footer">
+            <article class="copyright">
+                &copy; 2023 Toquen el dom
+            </article>
+            <article class="networks">
+                <article class="privacy">
+                    Politica de privacidad || Información legal
+                </article>
+                <article class="logos">
+                    <img src="../public/assets/icons/logo-instagram.png" alt="logo-instagram">
+                <img src="../public/assets/icons/logo-linkedin.png" alt="logo-linkedin">
+                <img src="../public/assets/icons/logo-gitHub.png" alt="logo-gitHub">
+                <img src="../public/assets/icons/logo-facebook.png" alt="logo-facebook">
+                </article>
+            </article>
+            <article class="f2">
+                <small>Madrid</small>
+                <br>
+                <small>28004</small>
+            </article>
+        </section>
+         </section>
+    
+         <!-- fin footer -->
+     <script src="../src/js/script.js"></script>
+</body>
+</html>
