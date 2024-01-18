@@ -342,6 +342,7 @@ table, th, td {
 /* fin footer */
 
 @media only screen and (min-width: 320px) and (max-width: 1000px){
+
   /* inicio menu hamburguesa */
   .hamburguer,
       .toggle-menu {
@@ -387,6 +388,10 @@ table, th, td {
        }
   
   /* fin nav */
+
+  .responsiveTable{
+    display: none;
+  }
 
    /* inicio footer */
 .line{
@@ -445,11 +450,12 @@ font-size: 18px;
 
 
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1001px) { /*vertical*/
   .responsive-text {
       display: none;
   }
 }
+
 
 /* Contenido pantalla movil horizontal */
 
