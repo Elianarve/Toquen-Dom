@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FBF9F1;
+}
+
+/* menu hamburguesa */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguer {
+    position: relative;
+    width: 40px;
+    height: 4px;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburguer:before {
+    top: -10px;
+    width: 40px;
+}
+
+.hamburguer:after {
+    top: 10px;
+    width: 40px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburguer,
+.toggle-menu {
+    display: none;
+}
+
+.navigation input:checked~.hamburguer {
+    background-color: transparent;
+}
+
+.navigation input:checked~.hamburguer:before {
+    top: 0px;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.hamburguer:after {
+    top: 0px;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.menu {
+    right: 0;
+}
+/* fin menu hamburguesa */
+
+/* Inicio nav */
+.nav {
+    background-color: #419197;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.img-logo{
+    background-color: #419197;
+    height: 5vw;
+    margin: 0.5em;
+}
+
+.menu{
+    width: 50vw;
+    background-color: #419197;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li a{
+    text-decoration: none;
+    background-color: #419197;
+    color: #FBF9F1;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.menu li a:hover{
+    background-color: #E55807;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+.list{
+    list-style: none;
+    background-color: #419197;
+}
+/* fin barra nav */
+
+/* inicio secciones */
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.section-center{
+    background-color: #FBF9F1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 100px;
+    color: #12486B;
+    margin: 7% 0 0 15%;
+    line-height: 108%;
+}
+
+.title-coders{
+    font-weight: 800;
+    font-size: 100px;
+    color: #12486B;
+    margin-left: 100px;
+}
+
+.subtitle{
+    font-size: 42px;
+    color: #E55807;
+    font-weight: 400;
+    margin: 7% 0 0 15%;
+}
+
+.paragraph{
+    margin-left: 15%;
+    font-size: 24px;
+    color: #12486B;
+    text-align: justify;
+    width: 65%;
+}
+
+.section-img{
+    background-color: #FBF9F1;
+    margin-right: 4%;
+}
+
+.img-body{
+    margin-top: 7%;
+}
+/* fin secciones */
+
+/* inicio footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between;
+    margin: 1vw; */
+}
+
+.line{
+    width: 95vw;
+    background-color: #12486B;
+    height: 2px;
+}
+
+.section-footer{
+    width: 95vw;
+    color: #12486B;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy, 
+.copyright{
+    font-size: 18px;
+}
+
+.f2 {
+    text-align: right;
+    font-size: 18px;
+}
+
+.redes-logo {
+    width: 35px;  
+    height: 35px;
+}
+/* fin footer */
+
+@media only screen and (min-width: 320px) and (max-width: 1000px){
+/* inicio menu hamburguesa */
+.hamburguer,
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        position: fixed;
+        width: 135px;
+        height: auto;
+        margin-top: 70%;
+        margin-left: 15%;
+        padding: 10%;
+    }
+
+    .menu li a{
+        font-size: 16px;
+    }
+
+    .list{
+        margin-top: 50%;
+        text-align: end;
+        margin-right: 30%;
+    }
+/* fin menu hamburguesa */
+
+/* inicio nav */
+     .img-logo{
+        height: 10vw;
+        margin: 1%;
+     }
+
+     .nav{
+        height: 15vw;
+        padding: 2%;
+     }
+
+/* fin nav */
+
+/* inicio secciones */
+.container{
+    display: block;
+}
+
+.section-center{
+    width: 100%;
+}
+
+.title{
+    font-weight: 600;
+    line-height: 108%;
+    font-size: 80px;
+    margin: 7% 0 0 8%;
+}
+
+.title-coders{
+    font-weight: 600;
+    font-size: 80px;
+    margin-left: 12%;
+}
+
+.subtitle{
+    font-size: 29px;
+    margin: 7% 0 0 4%;
+}
+
+.paragraph{
+    margin: auto;
+    width: 90%;
+}
+
+.section-img{
+    margin: 0px;
+}
+
+.img-body{
+    margin: auto;
+    width: 100%;
+}
+
+/* inicio footer */
+.line{
+    margin-left: 2%;
+}
+
+.section-footer{
+    display: contents;
+}
+
+.copyright{
+    font-size: 24px;
+}
+
+.networks {
+font-size: 18px;
+}
+
+.logos{
+    font-size: 30px;
+}
+
+.f2 {
+    font-size: 24px;
+    line-height: 80%;
+    text-align: center;
+}
+/* fin footer */
+}
