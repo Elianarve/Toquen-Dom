@@ -291,14 +291,11 @@ table, th, td {
   border-collapse: collapse;
 }
 
-div {
-  display: flex;
-}
-
 .responsiveTable {
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .aling{
