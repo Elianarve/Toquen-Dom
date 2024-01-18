@@ -327,12 +327,11 @@ input, textarea {
 /* inicio footer */
 
 .footer {
-    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-     justify-content: space-between;
-    margin: 1vw;
+    /* justify-content: space-between;
+    margin: 1vw; */
 }
 
 .line{
@@ -345,8 +344,8 @@ input, textarea {
     width: 95vw;
     color: #12486B;
     font-size: 1.5vw;
-    display: flex;
-    justify-content: space-between;
+    display: flex !important ;
+    justify-content: space-between !important;
     margin: 3%;
 }
 
@@ -371,6 +370,7 @@ input, textarea {
     height: 35px;
 }
 /* fin footer */
+
 
 
 /* ----- -----  Mediaqueries ----- ----- */
