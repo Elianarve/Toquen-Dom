@@ -1,0 +1,470 @@
+* {
+	/*box-sizing: border-box;*/
+	margin: 0; 
+}
+
+main {
+	background: linear-gradient(0deg, #FBF9F1, #419197);
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* menu hamburguesa */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguer {
+    position: relative;
+    width: 40px;
+    height: 4px;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburguer:before {
+    top: -10px;
+    width: 40px;
+}
+
+.hamburguer:after {
+    top: 10px;
+    width: 40px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburguer,
+.toggle-menu {
+    display: none;
+}
+
+.navigation input:checked~.hamburguer {
+    background-color: transparent;
+}
+
+.navigation input:checked~.hamburguer:before {
+    top: 0px;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.hamburguer:after {
+    top: 0px;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.menu {
+    right: 0;
+}
+/* fin menu hamburguesa */
+
+/* Inicio nav */
+.nav {
+	font-family: 'Poppins', sans-serif;
+    background-color: #419197;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.img-logo{
+    background-color: #419197;
+    height: 5vw;
+    margin: 0.5em;
+}
+
+.menu{
+    width: 50vw;
+    background-color: #419197;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li a{
+    text-decoration: none;
+    background-color: #419197;
+    color: #FBF9F1;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.menu li a:hover{
+    background-color: #E55807;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+.list{
+    list-style: none;
+    background-color: #419197;
+}
+/* fin barra nav */
+
+
+/* Estilos formulario */
+
+.form__container {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	box-sizing: border-box;
+	padding: 3%;
+    width: 23%;
+    border-radius: 2.5em;
+    border: 3px solid #12486B;
+    background: rgba(18, 72, 107, 0.60);
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+	/*margin-top: 3rem;*/
+	margin-bottom: 4rem;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    color: #FBF9F1;
+    font-size: 2.2rem;
+    text-align: center; 
+    margin: 0; 
+    width: 100%;
+}
+
+input, textarea {
+    padding: 1.1rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1.25rem;
+    background-color: #FBF9F1;
+    color: #12486B;
+    outline: none;
+}
+
+.formulario {
+	display: flex;
+    flex-direction: column;
+}
+
+.formulario__label {
+    font-family: 'Poppins', sans-serif;
+    color: #FBF9F1;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+	display: block; /* Para abarcar el 100% */
+	cursor: pointer;
+    text-align: left;
+}
+
+.formulario__grupo-input {
+	position: relative; /* para que luego podamos posicionar el icono dentro del input */
+}
+
+.formulario__input {
+    display: block;  
+    margin: auto;   
+	background: #FBF9F1;
+	border: 3px solid transparent; /*Transparente para que sólo se vea cuando tiene el estado focus (hagamos click) */
+	width: 80%;
+	border-radius: 2rem;
+	height: 2rem;
+	line-height: 2rem; /*Igual que height para que el texto quede centrado */
+	padding: 0 40px 0 10px;
+	transition: .3s ease all; /*Transición para todas las propiedades*/
+}
+
+.formulario__input:focus {  /*Cuando le damos click, la transición hará que aparezca el borde*/
+	border: 3px solid #78D6C6;
+	outline: none; /*Para quitar un subrayado que pone el navegador y no lo quiero*/
+	box-shadow: 3px 0px 30px rgba(1, 1, 1, 0.4);
+}
+
+.formulario__terminos {
+    font-family: 'Poppins', sans-serif;
+    color: #12486B;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 2rem;
+	display: block;
+	width: 100%;
+	/*padding: 1rem;*/
+	cursor: pointer;
+    text-align: center;
+}
+
+
+.formulario__input-error {
+	color: #ff0000;
+	font-size: 0.7rem;
+	text-shadow: 2px 1px 1px black;
+	margin-top: 1rem;
+	text-justify: center;
+	/*margin-bottom: 0;*/
+	display: none; /*Para que los mensajes estén ocultos y sólo se muestren cuando haya un error en el input */
+}
+
+.formulario__input-error-activo { /*Modificador que cuando está activo  muestra el mensaje de error en el input */
+	display: block;
+}
+
+.formulario__validacion-estado { 
+	position: absolute; /*Para posicionar el icono de error*/
+	right: 0px;
+	bottom: 9px;
+	z-index: 100; /*Aseguro que siempre va a estar por encima de otros elementos*/
+	font-size: 16px;
+	opacity: 0; /*Para que no se vea hasta que haya un error */
+}
+
+.formulario__checkbox { /*Para separar el checkbox del texto Acepto terminos y condiciones*/
+	margin-right: 5px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	display: flex;
+}
+
+.formulario__mensaje {
+	background: #F66060;
+	padding: 0 1rem;
+	/*margin-bottom: 1rem;*/
+	border-radius: 3px;
+	display: none; /*Para que esté oculto y solo se muestre cuando esté activo*/
+}
+
+.formulario__mensaje-activo { /*Modificador del mensaje de error*/
+	display: block;
+}
+
+.formulario__mensaje p { /*Centra el mensaje de error dentro de su campo*/
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 2rem;
+	line-height: 2rem;
+	width: 50%;
+	background: #E55807;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: #FBF9F1;
+	font-weight: bold;
+	border: none;
+	border-radius: 2rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	transition: .1s ease all; /*Transición de 1seg para todas las propiedades*/
+}
+
+.formulario__btn:hover { /*Sombreado al pasar por encima del btn con el cursor*/
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito { /*Mensaje ¡ENVIADO!*/
+	color: #FBF9F1;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	display: none; /*Oculto para que solo se muestre cuando estén todos los inputs correctos*/
+}
+
+.formulario__mensaje-exito-activo { /*Modificador que mostrará el mensaje de enviado correctamente*/
+	display: block;
+}
+
+/* ----- -----  Estilos para Validación ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado { /*Clase adicional para que muestre el color verde cuando esté correcto*/
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label { /*Modificador de color rojo cuando sea incorrecto*/
+	color: #ff0000;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado { /*Para que el icono de error también se muestre en rojo */
+	color: #ff0000;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input { /*Para que el borde del input se muestre en rojo al tener un error*/
+	border: 3px solid #ff0000;
+}
+/* Fin formulario */
+
+/* inicio footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between;
+    margin: 1vw; */
+}
+
+.line{
+    width: 95vw;
+    background-color: #12486B;
+    height: 2px;
+}
+
+.section-footer{
+    width: 95vw;
+    color: #12486B;
+    font-size: 1.5vw;
+    display: flex !important ;
+    justify-content: space-between !important;
+    margin: 3%;
+}
+
+.networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy, 
+.copyright{
+    font-size: 18px;
+}
+
+.f2 {
+    text-align: right;
+    font-size: 18px;
+}
+
+.redes-logo {
+    width: 35px;  
+    height: 35px;
+}
+/* fin footer */
+
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+/* inicio menu hamburguesa */
+.hamburguer,
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        position: fixed;
+        width: 135px;
+        height: auto;
+        margin-top: 70%;
+        margin-left: 15%;
+        padding: 10%;
+    }
+
+    .menu li a{
+        font-size: 16px;
+    }
+
+    .list{
+        margin-top: 50%;
+        text-align: end;
+        margin-right: 30%;
+    }
+/* fin menu hamburguesa */
+
+/* inicio nav */
+     .img-logo{
+        height: 10vw;
+        margin: 1%;
+     }
+
+     .nav{
+        height: 15vw;
+        padding: 2%;
+     }
+
+/* fin nav */
+
+/* Inicio formulario*/
+	.formulario {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	.formulario__label {
+		font-size: 0.8rem;
+		text-align: left;
+	}
+
+	.formulario__input {
+		width: 30%;
+	}
+}
+
+    .formulario__btn {
+        width: 70%;
+    }
+/* Fin formulario */
+
+/* inicio footer */
+.line{
+    margin-left: 2%;
+}
+
+.section-footer{
+    display: contents;
+}
+
+.copyright{
+    font-size: 24px;
+}
+
+.networks {
+font-size: 18px;
+}
+
+.logos{
+    font-size: 30px;
+}
+
+.f2 {
+    font-size: 24px;
+    line-height: 80%;
+    text-align: center;
+}
+/* fin footer */
