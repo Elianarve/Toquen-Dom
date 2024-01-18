@@ -267,6 +267,48 @@ body {
 
 /* fin instrument */
 
+/* Inicio de tabla */
+
+table {
+  margin: 10px 5px 0px 5px;
+}
+
+th {
+  text-align: left;
+  background-color: #419197;
+}
+
+td {
+  background-color: #78D6C6;
+}
+
+th, td {
+  padding: 10px;
+}
+
+table, th, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+div {
+  display: flex;
+}
+
+.responsiveTable {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aling{
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Fin de tabla */
+
 /* inicio footer */
 
  .footer {
