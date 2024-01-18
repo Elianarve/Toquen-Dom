@@ -351,8 +351,8 @@ h4:hover {
 
     /* inicio nav */
     .img-logo{
-        width: 65px;
-        height: 15px;
+        width: 150px;
+        height: 40px;
         margin: 1%;
      }
 
@@ -432,20 +432,12 @@ h4:hover {
     display: contents;
 }
 
-.copyright{
-    font-size: 24px;
+.copyright, .networks, .logos, .f2 {
+    font-size: 15px;
 }
 
-.networks {
-font-size: 18px;
-}
-
-.logos{
-    font-size: 30px;
-}
 
 .f2 {
-    font-size: 24px;
     line-height: 80%;
     text-align: center;
 }
