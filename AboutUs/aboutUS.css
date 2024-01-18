@@ -220,11 +220,30 @@ margin: 1%;
         border: 1px solid #fff;
     }
     
-    .profilePhoto {
+    .profilePhoto1 {
+        background-image: url(images/alba.jpg);
+    }
+
+    .profilePhoto2 {
+        background-image: url(images/estefy.jpg);
+    }
+
+    .profilePhoto3 {
+        background-image: url(images/bea.jpg);
+    }
+
+    .profilePhoto4 {
+        background-image: url(images/leite.jpg);
+    }
+
+    .profilePhoto5 {
+        background-image: url(images/eliana.jpg);
+    }
+    
+    .profilePhoto1, .profilePhoto2, .profilePhoto3, .profilePhoto4, .profilePhoto5 {
         width: 30vw;
         height: 30vw;
         border-radius: 100vw;
-        background-image: url(images/profile_photo_example.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -304,12 +323,31 @@ margin: 1%;
         align-items: center;
         margin: 4vw 0vw;
     }
+
+    .profilePhoto1 {
+        background-image: url(images/alba.jpg);
+    }
+
+    .profilePhoto2 {
+        background-image: url(images/estefy.jpg);
+    }
+
+    .profilePhoto3 {
+        background-image: url(images/bea.jpg);
+    }
+
+    .profilePhoto4 {
+        background-image: url(images/leite.jpg);
+    }
+
+    .profilePhoto5 {
+        background-image: url(images/eliana.jpg);
+    }
     
-    .profilePhoto {
+    .profilePhoto1, .profilePhoto2, .profilePhoto3, .profilePhoto4, .profilePhoto5 {
         width: 10vw;
         height: 10vw;
         border-radius: 100vw;
-        background-image: url(images/profile_photo_example.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
