@@ -334,9 +334,20 @@ table, th, td {
   align-items: center;
 }
 
+.privacy, 
+.copyright{
+    font-size: 18px;
+}
+
 .f2 {
   text-align: right;
+  font-size: 18px;
 } 
+
+.redes-logo{
+  width: 35px;
+  height: 35px;
+}
 
 /* fin footer */
 
