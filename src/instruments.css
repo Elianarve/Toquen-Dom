@@ -170,7 +170,7 @@ h4:hover {
 .list-kalimba {
     color: #12486B;
     font-family: Poppins;
-    font-size: 0.9vw;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -217,7 +217,7 @@ h4:hover {
 .list-piano {
     margin: 5%;
     width: 30%;
-    height: 50%;
+    height: 80%;
     border-left: #E55807 0.3em solid;
     padding-left: 4.5%;
 }
@@ -239,7 +239,7 @@ h4:hover {
 }
 
 .kalimba p {
-    text-align: end;
+    text-align: start;
     margin-right: 5%;
 }
 
@@ -258,7 +258,7 @@ h4:hover {
 .list-guitar {
     margin: 5%;
     width: 25%;
-    height: 40%;
+    height: 55%;
     border-left: #E55807 0.3em solid;
     padding-left: 4.5%;
 }
@@ -266,7 +266,7 @@ h4:hover {
 .list-kalimba {
     margin: 5%;
     width: 35%;
-    height: 40%;
+    height: 50%;
     border-left: #E55807 0.3em solid;
     padding-left: 4.5%;
 }
@@ -371,12 +371,12 @@ h4:hover {
     }
 
     h4 {
-        font-size: 0.48em;
+        font-size: 0.55em;
     }
 
     img {
-        width: 7em;
-        height: 6em;
+        width: 8em;
+        height: 7em;
     }
 
     p {
@@ -399,11 +399,19 @@ h4:hover {
         align-items: center;
     }
 
+    .kalimba p {
+        text-align: end;
+    }
+
     .description-drumset,
     .description-guitar,
     .description-piano,
     .description-kalimba {
         flex-direction: column;
+    }
+
+    .guitar-right, .kalimba-right {
+        margin-left: 20px;
     }
 
     .list-guitar,
@@ -419,9 +427,9 @@ h4:hover {
     .list-guitar,
     .list-piano,
     .list-kalimba {
-        font-size: 0.35em;
+        font-size: 0.48em;
         font-weight: normal;
-        width: 35%;
+        width: 85%;
     }
 
     /* END ALL CONTAINERS INSTRUMENT query*/
@@ -435,8 +443,12 @@ h4:hover {
     display: contents;
 }
 
-.copyright, .networks, .logos, .f2 {
-    font-size: 15px;
+.copyright, .networks, .f2, .privacy {
+    font-size: 12px;
+}
+
+.logos {
+
 }
 
 
