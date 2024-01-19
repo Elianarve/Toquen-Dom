@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;600&family=Poppins&family=Raleway:wght@300&family=Roboto:ital,wght@0,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
 
 /* menu hamburguesa */
 .navigation {
@@ -94,12 +94,12 @@
     justify-content: space-evenly;
     }
     
-    .menu li a{
-    text-decoration: none;
-    background-color: #419197;
-    color: #FBF9F1;
-    font-weight: bold;
-    padding: 10px 25px;
+    .menu li a {
+        text-decoration: none;
+        background-color: #419197;
+        color: #FBF9F1;
+        font-weight: bold;
+        padding: 10px 25px;
     }
     
     .menu li a:hover{
@@ -136,9 +136,9 @@
     margin: 2%;
 }
 
-.logos img {
-    width: 28px;
-    height: 25px;
+.redes-logo {
+    width: 35px;
+    height: 35px;
 }
 
 .networks {
@@ -282,22 +282,49 @@ margin: 1%;
     }
 
        /* inicio footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between;
+    margin: 1vw; */
+}
+
 .line{
-    margin-left: 2%;
+    width: 95vw;
+    background-color: #12486B;
+    height: 2px;
 }
 
 .section-footer{
-    display: contents;
+    width: 95vw;
+    color: #12486B;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
 }
 
-.copyright, .networks, .logos, .f2 {
-    font-size: 15px;
+.networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.privacy, 
+.copyright{
+    font-size: 18px;
+}
 
 .f2 {
-    line-height: 80%;
-    text-align: center;
+    text-align: right;
+    font-size: 18px;
+}
+
+.redes-logo {
+    width: 35px;  
+    height: 35px;
 }
 /* fin footer */
     
@@ -393,42 +420,6 @@ margin: 1%;
         display: flex;
         flex-direction: column-reverse;
     }
-
-    /* inicio footer */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-between;
-    margin: 1vw; */
-}
-
-.line{
-    width: 95vw;
-    background-color: #12486B;
-    height: 2px;
-}
-
-.section-footer{
-    width: 95vw;
-    color: #12486B;
-    font-size: 1.5vw;
-    display: flex;
-    justify-content: space-between;
-    margin: 3%;
-}
-
-.networks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.f2 {
-    text-align: right;
-}
-/* fin footer */
 
 }
 
