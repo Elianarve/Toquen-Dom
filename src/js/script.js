@@ -3,7 +3,7 @@ const instruments = Array.from(document.getElementById("instruments").children);
 
 console.log(instruments);
 
-const keyframes = [                             //animacion para que los instrumentos vibren
+const keyframes = [                        //animacion para que los instrumentos vibren
   { transform: "translate3d(-1px, 0, 0)"},
   { transform: "translate3d(2px, 0, 0)" },
   { transform: "translate3d(-4px, 0, 0)" },
