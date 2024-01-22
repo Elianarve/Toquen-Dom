@@ -40,7 +40,7 @@ const validarCampo = (expresion, input, campo) => {  //Para validar un input de 
 
 // --- Función de tipo flecha para cuando se deje de presionar cada tecla o se haga click fuera del input ---
 const validarFormulario = (e) => {
-	switch (e.target.name) {  //Para identificar cuál de los inputs queremos validar.
+	switch (e.target.name) {  //Para determinar qué campo del formulario debe ser validado en función del evento de entrada del usuario. Identificamos cada input que queremos validar con su "name" del html.
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre'); //Para que lo que estemos escribiendo en este input coincida con su expresión regular
 		break;
@@ -57,7 +57,7 @@ const validarFormulario = (e) => {
 }
 
 // --- Comprobación cuando usuario escriba o dé un click fuera del input ---
-inputs.forEach((input) => {  //Para que por cada input ejecute un codigo.
+inputs.forEach((input) => {  //Para iterar sobre cada input, se añaden dos listeners de eventos.
 	input.addEventListener('keyup', validarFormulario); //Al dejar de presionar una tecla queremos que compruebe el campo del input.
 	input.addEventListener('blur', validarFormulario); //Cuando demos un click fuera del input que lo compruebe.
 });
