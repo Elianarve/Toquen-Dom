@@ -283,50 +283,24 @@ margin: 1%;
 
        /* inicio footer */
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-between;
-    margin: 1vw; */
-}
+       .line{
+        margin-left: 2%;
+    }
+    
+    .section-footer{
+        display: contents;
+    }
+    
+    .copyright, .networks, .f2, .privacy {
+        font-size: 12px;
+    }
+    
+    .f2 {
+        line-height: 80%;
+        text-align: center;
+    }
 
-.line{
-    width: 95vw;
-    background-color: #12486B;
-    height: 2px;
-}
-
-.section-footer{
-    width: 95vw;
-    color: #12486B;
-    font-size: 1.5vw;
-    display: flex;
-    justify-content: space-between;
-    margin: 3%;
-}
-
-.networks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.privacy, 
-.copyright{
-    font-size: 18px;
-}
-
-.f2 {
-    text-align: right;
-    font-size: 18px;
-}
-
-.redes-logo {
-    width: 35px;  
-    height: 35px;
-}
-/* fin footer */
+        /* fin footer */
     
 }
 
