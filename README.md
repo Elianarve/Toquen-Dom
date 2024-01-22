@@ -30,6 +30,12 @@ Un proyecto de página web front-end diseñado para una escuela de musica. Cuent
 
 ![](images/Readme_construccion.png)
 
+>En caso de usar el instrumento en móvil:
+
+ La web pedira al usuario que rote la pantalla para acceder al instrumento interactivo como se muestra a continuacion:
+
+![](images/Readme-responsive_instrument.png)
+
 ## Instalación
 SIgue los siguientes pasos en la terminal (Bash).
 
