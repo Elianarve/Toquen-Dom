@@ -1,7 +1,8 @@
-const formulario = document.getElementById('formulario'); //Accedemos al id="formulario"
+//--- Seleccionamos elementos del DOM
+const formulario = document.getElementById('formulario'); //Busca elementos con id="formulario" y lo guardamos en una constante.
 const inputs = document.querySelectorAll('.formulario__input'); //Almacenamos en un array todos nuestros inputs del formulario mediante el id="formulario__input para después con un eventListener, cada vez que escribimos en el input hagamos una comprobación y validemos el fomulario"
 
-//--- Declaración de expresiones regulares ---
+//--- Declaración de expresiones regulares: qué tipos de datos pueden contener cada input---
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, //Letras, espacios y acentos.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, // campo + @campo + .campo
@@ -19,15 +20,15 @@ const campos = {
 }
 
 // --- Función flecha para reutilizarla dentro del bucle switch posterior ---
-const validarCampo = (expresion, input, campo) => {  //Para validar un input de forma individual, le pasamos los valores a la función: expresion regular(ej:expresiones.nombre), input(e.target) y camp ('nombre', 'phone' etc)
-	if(expresion.test(input.value)){  // 
+const validarCampo = (expresion, input, campo) => {  //Para validar un input de forma individual, le pasamos 3 argumentos a la función: expresion regular(ej:expresiones.nombre), input(e.target) y campo ('nombre', 'phone' etc)
+	if(expresion.test(input.value)){  //Método para probar si el valor del input coinicde con la expresión regular.
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
 		campos[campo] = true; //Aquí le decimos que valide el campo a true (ya que los declaramos como false)
-	} else {
+	} else {  //Si no coincide con la expresión regular
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
