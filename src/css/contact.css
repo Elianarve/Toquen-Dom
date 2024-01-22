@@ -145,7 +145,7 @@ main {
     border: 3px solid #12486B;
     background: rgba(18, 72, 107, 0.60);
     box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
-	/*margin-top: 3rem;*/
+	margin-top: 3rem;
 	margin-bottom: 4rem;
 }
 
@@ -237,8 +237,8 @@ input, textarea {
 
 .formulario__validacion-estado { 
 	position: absolute; /*Para posicionar el icono de error*/
-	right: 0px;
-	bottom: 9px;
+	right: 15px;
+	bottom:11px;
 	z-index: 100; /*Aseguro que siempre va a estar por encima de otros elementos*/
 	font-size: 16px;
 	opacity: 0; /*Para que no se vea hasta que haya un error */
@@ -421,13 +421,17 @@ input, textarea {
 /* fin nav */
 
 /* Inicio formulario*/
+    .form__container{
+        width: 70%;
+    }
+
 	.formulario {
 		display: flex;
 		flex-direction: column;
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.7rem;
 	}
 
 	.formulario__label {
@@ -436,12 +440,17 @@ input, textarea {
 	}
 
 	.formulario__input {
-		width: 30%;
+		width: 70%;
 	}
-}
+
+   .formulario__validacion-estado{
+       right: 9%;
+       bottom: 30%;
+   }
 
     .formulario__btn {
         width: 70%;
+        font-size: 1.3rem;
     }
 /* Fin formulario */
 
@@ -451,7 +460,7 @@ input, textarea {
 }
 
 .section-footer{
-    display: contents;
+    display: contents !important;
 }
 
 .copyright{
@@ -472,3 +481,4 @@ font-size: 18px;
     text-align: center;
 }
 /* fin footer */
+}
