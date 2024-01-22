@@ -147,11 +147,12 @@ body {
   max-width: auto;
   position: relative;
   padding: 25%;
-  cursor: url('/public/assets/img/drumstick.png'), auto;
+  cursor: url("/public/assets/img/drumstick.png"), auto;
 }
 
 .centered-image {
-  display: none;}
+  display: none;
+}
 
 
 /* Hola chicas aqui estoy yo, soy Leite es una prueba para ver si sale*/

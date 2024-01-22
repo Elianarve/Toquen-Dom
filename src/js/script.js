@@ -83,8 +83,7 @@ if (id == 'img-tom-2' || id == 'j'){
 }
 
 instruments.forEach(item => item.addEventListener("click", ev => { //el evento q va a pasar dentro de la funcion
-  console.log(ev);
-  playSound(ev.target.id);// <- este es el vento click, cuando demos click q suene
+  playSound(ev.target.id);// <- este es el evento click, cuando demos click q suene
 }));
 
 document.addEventListener("keydown", (event) => {
