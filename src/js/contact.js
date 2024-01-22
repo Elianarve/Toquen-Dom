@@ -6,28 +6,27 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, //Letras, espacios y acentos.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, // campo + @campo + .campo
     phone: /^\d{7,12}$/, //Solo numeros, de 7 a 12 numeros.
-	message: /^[\s\S]{1,100}$/
-	//Permite cualquier carácter hasta un máximo de 100. Ojo! El último no lleva la coma.
+	message: /^[\s\S]{1,100}$/ //Permite cualquier carácter hasta un máximo de 100. Ojo! El último no lleva la coma.
 }
 
-//Declaramos un objeto con todos los campos para más tarde comprobar que están rellenados correctamente.
-//Al inicio del formulario quieres que todos los cmapos sean false porque todavía no están rellenados.
+//Declaramos un objeto 'campos' con todos los inputs para más tarde comprobar que están rellenados correctamente.
+//Al inicio del formulario queremos que todos los cmapos sean false porque todavía no están validados.
 const campos = {
 	nombre: false,
 	email: false,
 	phone: false,
-    message: false //Ojo! El último elemento no lleva la coma.
+    message: false //Ojo! El último elemento del objeto no lleva la coma.
 }
 
-// --- Función flecha para reutilizarla dentro del bucle switch anterior ---
-const validarCampo = (expresion, input, campo) => {  //Le pasamos los valores a la función: expresion regular(ej:expresiones.nombre), input(e.target) y camp ('nombre', 'phone' etc)
+// --- Función flecha para reutilizarla dentro del bucle switch posterior ---
+const validarCampo = (expresion, input, campo) => {  //Para validar un input de forma individual, le pasamos los valores a la función: expresion regular(ej:expresiones.nombre), input(e.target) y camp ('nombre', 'phone' etc)
 	if(expresion.test(input.value)){  // 
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
-		campos[campo] = true; //Aquí le decimos que valide el campo a true (ya que fueron declarados como false)
+		campos[campo] = true; //Aquí le decimos que valide el campo a true (ya que los declaramos como false)
 	} else {
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
@@ -64,7 +63,7 @@ inputs.forEach((input) => {  //Para que por cada input ejecute un codigo.
 
 // --- Comprobación cuando se pulse el btn Enviar ---
 formulario.addEventListener('submit', (e) => {  //Añado un controlador de eventos al elemento del DOM referenciado por 'formulario'.
-	e.preventDefault();  //Evito enviarlo hasta que no compruebe las validaciones.
+	e.preventDefault();  //Evito su función por defecto, que sería enviarlo, hasta que no compruebe las validaciones.
 
 // --- Comprobación de todos los campos para que estén correctos --- 
 	const terminos = document.getElementById('terminos'); //Declaramos esta constante asignando el elemento del DOM con el ID 'terminos'para poder validar este campo con .checked
